@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import debug_toolbar
 from django.conf.urls import url, include
 from django.contrib import admin
 
@@ -23,6 +24,7 @@ from accounts.views.instructor_signup import InstructorSignUpView
 from accounts.views.student_signup import StudentSignUpView
 
 urlpatterns = [
+    url(r'^__debug__/', include(debug_toolbar.urls)),
     url(r'^instructor/', include('instructor.urls')),
     url(r'^student/', include('student.urls')),
     url(r'^admin/', admin.site.urls),

@@ -1,7 +1,8 @@
 from django import forms
 from django.forms.utils import ValidationError
 
-from quiz.models import Question, Answer, StudentAnswer
+from course.models import Course
+from quiz.models import Question, Answer, StudentAnswer, Quiz
 
 
 class QuestionForm(forms.ModelForm):
@@ -39,4 +40,17 @@ class TakeQuizForm(forms.ModelForm):
         question = kwargs.pop('question')
         super().__init__(*args, **kwargs)
         self.fields['answer'].queryset = question.answers.order_by('text')
-        print(self.fields['answer'].queryset)
+
+
+class QuizCreateForm(forms.ModelForm):
+    course = forms.ModelChoiceField(queryset=Course.objects)
+
+
+    class Meta:
+        model = Quiz
+        fields = ('name', 'course',)
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+

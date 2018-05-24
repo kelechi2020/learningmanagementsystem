@@ -1,14 +1,16 @@
 from django.db import models
 
 # Create your models here.
+from accounts.models import User
 from instructor.models import Instructor
 
 
 class Course(models.Model):
+    creator = models.ForeignKey(User, on_delete=models.PROTECT,related_name='courses')
     title = models.CharField(max_length=255)
-    slug = models.SlugField(unique=True)
-    image = models.FileField(upload_to='course')
-    blob = models.CharField(max_length=500)
+    slug = models.SlugField(unique=True,blank=True)
+    image = models.FileField(upload_to='course', blank=True)
+    blob = models.CharField(max_length=500, blank=True)
     description = models.TextField()
     created = models.DateField(auto_now_add=True)
 

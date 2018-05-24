@@ -164,7 +164,7 @@ def question_change(request, quiz_pk, question_pk):
         form = QuestionForm(instance=question)
         formset = AnswerFormSet(instance=question)
 
-    return render(request, 'classroom/teachers/question_change_form.html', {
+    return render(request, 'question_change_form.html', {
         'quiz': quiz,
         'question': question,
         'form': form,
@@ -176,7 +176,7 @@ def question_change(request, quiz_pk, question_pk):
 class QuestionDeleteView(DeleteView):
     model = Question
     context_object_name = 'question'
-    template_name = 'classroom/teachers/question_delete_confirm.html'
+    template_name = 'question_delete_confirm.html'
     pk_url_kwarg = 'question_pk'
 
     def get_context_data(self, **kwargs):

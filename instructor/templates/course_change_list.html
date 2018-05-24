@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">My Courses</li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">My Courses</h2>
+  <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
+  <div class="card">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Created</th>
+
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for course in courses %}
+          <tr>
+
+            <td class="align-middle">{{ course.title }}</td>
+            <td class="align-middle">{{ course.description}}</td>
+            <td class="align-middle">{{ course.created }}</td>
+            <td class="text-right">
+{#              <a href="{% url 'teachers:quiz_results' quiz.pk %}" class="btn btn-primary">Add Topics</a>#}
+{#              <a href="{% url 'teachers:quiz_results' quiz.pk %}" class="btn btn-primary">Create Quiz</a>#}
+            </td>
+
+          </tr>
+        {% empty %}
+          <tr>
+            <td class="bg-light text-center font-italic" colspan="5">You haven't created any quiz yet.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

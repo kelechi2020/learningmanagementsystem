@@ -1,5 +1,6 @@
 from django import forms
 from django.forms.utils import ValidationError
+from django.shortcuts import get_object_or_404
 
 from course.models import Course
 from quiz.models import Question, Answer, StudentAnswer, Quiz
@@ -43,14 +44,12 @@ class TakeQuizForm(forms.ModelForm):
 
 
 class QuizCreateForm(forms.ModelForm):
-    course = forms.ModelChoiceField(queryset=Course.objects)
-
-
+    course = forms.ModelChoiceField(queryset=Course.objects.none())
     class Meta:
         model = Quiz
         fields = ('name', 'course',)
 
     def __init__(self, *args, **kwargs):
-
+        user = kwargs.pop('current_user')
         super().__init__(*args, **kwargs)
-
+        self.fields['course'].queryset = Course.objects.filter(creator=user)

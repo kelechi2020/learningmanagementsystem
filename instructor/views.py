@@ -1,3 +1,4 @@
+# coding=utf-8
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
@@ -10,18 +11,26 @@ from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
                                   UpdateView)
 
 from accounts.decorators import instructor_required
-from quiz.forms import QuestionForm, BaseAnswerInlineFormSet
+from course.models import Course
+from quiz.forms import QuestionForm, BaseAnswerInlineFormSet, QuizCreateForm
 from quiz.models import Quiz, Question, Answer
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')
 class QuizListView(ListView):
+    """
+    Returns list of quiz created by the currently logged in tutor
+    """
     model = Quiz
     ordering = ('name', )
     context_object_name = 'quizzes'
     template_name = 'quiz_change_list.html'
 
     def get_queryset(self):
+        """
+        Overrides th default queryset method to return quizzes by the currently logged in user
+        :return:
+        """
         queryset = self.request.user.quizzes \
             .select_related('course') \
             .annotate(questions_count=Count('questions', distinct=True)) \
@@ -31,16 +40,32 @@ class QuizListView(ListView):
 
 @method_decorator([login_required, instructor_required], name='dispatch')
 class QuizCreateView(CreateView):
-    model = Quiz
-    fields = ('name', 'course', )
+    """
+
+    """
+    form_class = QuizCreateForm
     template_name = 'quiz_add_form.html'
+    success_url = reverse_lazy('instructor:quiz_change_list')
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        if hasattr(self, 'object'):
+            kwargs.update({'instance': self.object, 'current_user': self.request.user})
+            return kwargs
 
     def form_valid(self, form):
         quiz = form.save(commit=False)
+        print("here")
+        course = Course.objects.get(pk=self.kwargs['course_pk'])
+        print(self.request.user, course.creator)
+        if self.request.user != course.creator:
+            messages.error(self.request, 'You are now allowed to add Quizzes to a course you did not author')
+            return redirect('instructor:topic_change_list')
         quiz.owner = self.request.user
+        quiz.course = course
         quiz.save()
         messages.success(self.request, 'The quiz was created with success! Go ahead and add some questions now.')
-        return redirect('teachers:quiz_change', quiz.pk)
+        return redirect('instructor:quiz_change_list')
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')
@@ -64,6 +89,16 @@ class QuizUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('instructor:quiz_change', kwargs={'pk': self.object.pk})
+
+    def dispatch(self, request, *args, **kwargs):
+        """
+        Overiding the dispatch method to ensure that only the authr of a quiz can change it
+        """
+        obj = self.get_object()
+        if obj.owner != self.request.user:
+            messages.error(self.request, "You cant edit this quiz as you are not the author")
+            return redirect('instructor:course_change_list')
+        return super().dispatch(request)
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')
@@ -121,7 +156,7 @@ def question_add(request, pk):
             question.quiz = quiz
             question.save()
             messages.success(request, 'You may now add answers/options to the question.')
-            return redirect('teachers:question_change', quiz.pk, question.pk)
+            return redirect('instructor:question_change', quiz.pk, question.pk)
     else:
         form = QuestionForm()
 
@@ -159,7 +194,7 @@ def question_change(request, quiz_pk, question_pk):
                 form.save()
                 formset.save()
             messages.success(request, 'Question and answers saved with success!')
-            return redirect('teachers:quiz_change', quiz.pk)
+            return redirect('instructor:quiz_change', quiz.pk)
     else:
         form = QuestionForm(instance=question)
         formset = AnswerFormSet(instance=question)
@@ -194,4 +229,14 @@ class QuestionDeleteView(DeleteView):
 
     def get_success_url(self):
         question = self.get_object()
-        return reverse('teachers:quiz_change', kwargs={'pk': question.quiz_id})
+        return reverse('instructor:quiz_change', kwargs={'pk': question.quiz_id})
+
+    def dispatch(self, request, *args, **kwargs):
+        """
+        Overiding the dispatch method to ensure that only the authr of a quiz can change it
+        """
+        obj = self.get_object()
+        if obj.owner != self.request.user:
+            messages.error(self.request, "You cant delete this quiz as you are not the author")
+            return redirect('instructor:course_change_list')
+        return super().dispatch(request)

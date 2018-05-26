@@ -2,7 +2,7 @@
 
 {% block content %}
   <nav aria-label="breadcrumb">
-  {% if request.user.is_instructor %}
+  {% if request.user.is_student %}
     <ol class="breadcrumb">
       <li class="breadcrumb-item active" aria-current="page">Available Courses</li>
     </ol>
@@ -17,7 +17,7 @@
   <h2 class="mb-3">My Courses</h2>
   <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
     {% endif %}
-
+ <h2 class="mb-3">Not Registered Courses</h2>
   <div class="card">
     <table class="table mb-0">
       <thead>
@@ -31,7 +31,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for course in courses %}
+        {% for course in unregistered_courses %}
           <tr>
 
             <td class="align-middle">{{ course.title }}</td>
@@ -40,10 +40,6 @@
             <td class="align-middle">{{ course.created }}</td>
               {% endif %}
             <td class="text-right">
-                {% if request.user.is_instructor %}
-              <a href="{% url 'instructor:topic_add' course.pk %}" class="btn btn-primary">Add Topics</a>
-              <a href="{% url 'instructor:quiz_add' course.pk %}" class="btn btn-primary">Create Quiz</a>
-                {% endif %}
             {% if request.user.is_student %}
               <a href="#" class="btn btn-primary">Register Course</a>
 
@@ -60,6 +56,36 @@
             {% if request.user.is_student %}
             <tr>
                 <td class="bg-light text-center font-italic" colspan="5">There are no course available.</td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+     <h2 class="mb-3">My Registered Courses</h2>
+    <div class="card">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for course in student_registered_courses %}
+          <tr>
+
+            <td class="align-middle">{{ course.title }}</td>
+            <td class="align-middle">{{ course.description}}</td>
+            <td class="text-right">
+            </td>
+          </tr>
+        {% empty %}
+            {% if request.user.is_student %}
+            <tr>
+                <td class="bg-light text-center font-italic" colspan="5">You have not registered any course yet.</td>
             </tr>
             {% endif %}
         {% endfor %}

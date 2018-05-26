@@ -1,17 +1,71 @@
+# coding=utf-8
 from django.contrib import messages
-from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.db.models import Count
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
-from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
-from django.views.generic import CreateView, ListView, UpdateView
+from django.views.generic import ListView
 
 from accounts.decorators import student_required
+from course.models import Course
 from quiz.forms import TakeQuizForm
 from quiz.models import Quiz
-from student.models import StudentTakenQuiz
+from student.models import StudentTakenQuiz, StudentProfile
+
+
+@method_decorator([login_required], name='dispatch')
+class CourseListView(ListView):
+    """
+        Returns a list of all available courses on the platform
+    """
+    model = Course
+    ordering = ('title', )
+    context_object_name = 'courses'
+    template_name = 'course_change_list.html'
+
+    def get_queryset(self):
+        """
+        Returns queryset to be used for displaying data on template
+        :return:
+        """
+        student = get_object_or_404(StudentProfile, user=self.request.user).course.values('title')
+        queryset = Course.objects.exclude(studentprofile__course__title__in=student)
+        return queryset
+
+
+@login_required
+@student_required
+def course_registration(request, course_pk):
+    """
+    Handles Student Course Registration
+    Returns a context containing list of courses registered by student and  a list of
+    students un-registered courses.
+    Also ensures that a student cannot register a course twice
+    :param request:
+    :param course_pk:
+    :return:
+    """
+    course = get_object_or_404(Course, pk=course_pk)
+    student = get_object_or_404(StudentProfile, user=request.user)
+    student_registered_courses = student.course.all()
+    unregistered_courses = Course.objects.exclude(studentprofile__course__in=student_registered_courses)
+
+    if course in student_registered_courses:
+        messages.error(request, "This Course {0} has been registered ".format(course.title))
+        return render(request, 'student_registered_courses.html', {'student_registered_courses':student_registered_courses, \
+                                                                   'unregistered_courses':unregistered_courses})
+    #register student to course
+    student.course.add(course)
+    messages.success(request, "the course {0} was successfully added".format(course.title))
+    return render(request, 'student_registered_courses.html', {'student_registered_courses': student_registered_courses, \
+                                                                   'unregistered_courses':unregistered_courses})
+
+
+
+
+
 
 
 @method_decorator([login_required, student_required], name='dispatch')
@@ -22,7 +76,7 @@ class QuizListView(ListView):
     template_name = 'classroom/students/quiz_list.html'
 
     def get_queryset(self):
-        student = self.request.user.student
+        student = self.request.user
         student_interests = student.interests.values_list('pk', flat=True)
         taken_quizzes = student.quizzes.values_list('pk', flat=True)
         queryset = Quiz.objects.filter(subject__in=student_interests) \
@@ -70,7 +124,7 @@ def take_quiz(request, pk):
                 student_answer.save()
                 if student.get_unanswered_questions(quiz).exists():
                     print("we still have un answered questions")
-                    return redirect('students:take_quiz', pk)
+                    return redirect('student:take_quiz', pk)
                 else:
                     print("here")
                     correct_answers = student.quiz_answers.filter(answer__question__quiz=quiz, answer__is_correct=True).count()
@@ -81,7 +135,7 @@ def take_quiz(request, pk):
                         messages.warning(request, 'Better luck next time! Your score for the quiz %s was %s.' % (quiz.name, score))
                     else:
                         messages.success(request, 'Congratulations! You completed the quiz %s with success! You scored %s points.' % (quiz.name, score))
-                    return redirect('students:quiz_list')
+                    return redirect('student:quiz_list')
     else:
         form = TakeQuizForm(question=question)
 

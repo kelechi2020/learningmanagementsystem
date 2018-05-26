@@ -2,6 +2,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.db import transaction
 
 from accounts.models import User
+from student.models import StudentProfile
 
 
 class InstructorSignUpForm(UserCreationForm):
@@ -29,7 +30,6 @@ class AssistantSignUpForm(UserCreationForm):
 
 class StudentSignUpForm(UserCreationForm):
 
-
     class Meta(UserCreationForm.Meta):
         model = User
 
@@ -38,7 +38,9 @@ class StudentSignUpForm(UserCreationForm):
         user = super().save(commit=False)
         user.is_student = True
         user.save()
+        StudentProfile.objects.create(user=user)
         return user
+
 
 class GuestSignUpForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):

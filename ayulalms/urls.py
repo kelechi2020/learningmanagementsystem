@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^instructor/', include('instructor.urls')),
     url(r'^student/', include('student.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^home/$', home, name='home'),
+    url(r'^$', home, name='home'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^accounts/signup/$', SignUpView.as_view(), name='signup'),
     url(r'^accounts/signup/student/$', StudentSignUpView.as_view(), name='student_signup'),

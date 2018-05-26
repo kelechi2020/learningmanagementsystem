@@ -1,6 +1,5 @@
+# coding=utf-8
 from django.db import models
-
-# Create your models here.
 from accounts.models import User
 from course.models import Course
 
@@ -11,7 +10,7 @@ class StudentProfile(models.Model):
     it's user field has a one to one relationship with the  User class
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True, related_name='student')
-    school_number = models.CharField(max_length=20, null=True)
+    school_number = models.CharField(max_length=20, null=True, blank=True)
     photo = models.FileField(upload_to='tutor', null=True, blank=True)
     designation = models.CharField(max_length=200, null=True, blank=True)
     phone = models.CharField(max_length=200, null=True, blank=True)

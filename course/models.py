@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
+from django.shortcuts import get_object_or_404
+
 from accounts.models import User
 from instructor.models import Instructor
 
@@ -16,6 +18,7 @@ class Course(models.Model):
 
     class Meta:
         verbose_name_plural = 'Course'
+
 
     def __str__(self):
         return self.title

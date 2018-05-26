@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">{{ course.title }}</li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">{{ course.title }}</h2>
+<div class="panel panel-primary">
+  <div class="panel-heading">Title</div>
+  <div class="panel-body">
+    {{ course.title }}
+  </div>
+<div class="panel panel-primary">
+  <div class="panel-heading">Course Description</div>
+  <div class="panel-body">
+    {{ course.description }}
+  </div>
+<div class="panel panel-primary">
+  <div class="panel-heading">Course Instructors</div>
+  <div class="panel-body">
+    {% for instructor in instructors %}
+        {{ instructor.user.username }}
+      {% endfor %}
+  <h1>Topics</h1>
+      {% for topic in topics %}
+        {{ topic.topic_title }}
+      {% endfor %}
+  </div>
+</div>
+  <div class="card">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Quiz</th>
+          <th>Course</th>
+          <th>Questions</th>
+          <th>Taken</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for quiz in quizzes %}
+          <tr>
+            <td class="align-middle"><a href="{% url 'instructor:quiz_change' quiz.pk %}">{{ quiz.name }}</a></td>
+            <td class="align-middle">{{ quiz.course.title }}</td>
+            <td class="align-middle">{{ quiz.questions_count }}</td>
+            <td class="align-middle">{{ quiz.taken_count }}</td>
+            <td class="text-right">
+{#              <a href="{% url 'instructor:quiz_results' quiz.pk %}" class="btn btn-primary">View results</a>#}
+                <a href="{% url 'instructor:quiz_change' quiz.pk %}" class="btn btn-primary">Edit Quiz</a>
+
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td class="bg-light text-center font-italic" colspan="5">You haven't created any quiz yet.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

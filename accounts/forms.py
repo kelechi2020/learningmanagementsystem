@@ -1,8 +1,10 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.db import transaction
 
-from accounts.models import User
+from accounts.models import User, GuestProfile
+from instructor.models import Instructor
 from student.models import StudentProfile
+from teaching_assistant.models import TeachingAssistant
 
 
 class InstructorSignUpForm(UserCreationForm):
@@ -14,6 +16,7 @@ class InstructorSignUpForm(UserCreationForm):
         user.is_instructor = True
         if commit:
             user.save()
+            Instructor.objects.create(user=user)
         return user
 
 class AssistantSignUpForm(UserCreationForm):
@@ -25,6 +28,7 @@ class AssistantSignUpForm(UserCreationForm):
         user.is_course_assistant = True
         if commit:
             user.save()
+            TeachingAssistant.objects.create(user=user)
         return user
 
 
@@ -51,4 +55,5 @@ class GuestSignUpForm(UserCreationForm):
         user.is_guest = True
         if commit:
             user.save()
+            GuestProfile.objects.create(user=user)
         return user

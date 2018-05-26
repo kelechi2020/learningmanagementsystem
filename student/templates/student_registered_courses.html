@@ -41,8 +41,7 @@
               {% endif %}
             <td class="text-right">
             {% if request.user.is_student %}
-              <a href="#" class="btn btn-primary">Register Course</a>
-
+              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>
             {% endif %}
             </td>
 
@@ -70,7 +69,8 @@
           <th>Title</th>
           <th>Description</th>
 
-          <th></th>
+
+
         </tr>
       </thead>
       <tbody>
@@ -80,6 +80,8 @@
             <td class="align-middle">{{ course.title }}</td>
             <td class="align-middle">{{ course.description}}</td>
             <td class="text-right">
+               <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Take Course</a>
+
             </td>
           </tr>
         {% empty %}

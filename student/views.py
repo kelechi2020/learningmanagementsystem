@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.db.models import Count
-from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView
@@ -24,6 +23,37 @@ class CourseListView(ListView):
     ordering = ('title', )
     context_object_name = 'courses'
     template_name = 'course_change_list.html'
+
+    def get_queryset(self):
+        """
+        Returns queryset to be used for displaying data on template
+        :return:
+        """
+        student = get_object_or_404(StudentProfile, user=self.request.user).course.values('title')
+        queryset = Course.objects.exclude(studentprofile__course__title__in=student)
+        return queryset
+
+
+@method_decorator([login_required, student_required], name='dispatch')
+class RegisteredCourseListView(ListView):
+    """
+        Returns a list of all available courses on the platform
+    """
+    model = Course
+    ordering = ('title', )
+    context_object_name = 'unregistered_courses'
+    template_name = 'student_registered_courses.html'
+
+    def get_context_data(self, **kwargs):
+        """
+        Passes the list of students registered courses as a context to the view
+        :param kwargs:
+        :return:
+        """
+        student = get_object_or_404(StudentProfile, user=self.request.user)
+        student_registered_courses = student.course.all()
+        kwargs['student_registered_courses'] = student_registered_courses
+        return super().get_context_data(**kwargs)
 
     def get_queryset(self):
         """

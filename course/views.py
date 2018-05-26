@@ -1,12 +1,14 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404, render
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
-from django.views.generic import CreateView, DeleteView, UpdateView, ListView
+from django.views.generic import CreateView, DeleteView, UpdateView, ListView, DetailView
 from accounts.decorators import instructor_required
 from course.models import Course, Topic
+from instructor.models import Instructor
+from student.models import StudentProfile
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')
@@ -18,7 +20,9 @@ class CourseCreateView(CreateView):
     def form_valid(self, form):
         course = form.save(commit=False)
         course.creator = self.request.user
+        instructor = Instructor.objects.get(user=self.request.user)
         course.save()
+        instructor.course.add(course)
         messages.success(self.request, 'The Course was created with success! Go ahead and add some quiz now.')
         return redirect('instructor:course_change_list')
 
@@ -33,6 +37,36 @@ class CourseListView(ListView):
     def get_queryset(self):
         queryset = Course.objects.filter(creator=self.request.user)
         return queryset
+
+@method_decorator([login_required], name='dispatch')
+class CourseDetailView(DetailView):
+    model = Course
+    context_object_name = 'course'
+    template_name = 'take_course.html'
+    pk_url_kwarg = 'course_pk'
+
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['instructors'] = self.course.instructor_set.all()
+        context['topics'] = self.course.topic_set.all()
+        return context
+
+    def dispatch(self, request, *args, **kwargs):
+        self.course = get_object_or_404(Course, pk=self.kwargs['course_pk'])
+        student_registered_courses = get_object_or_404(StudentProfile, user=request.user).course.all()
+        unregistered_courses = Course.objects.exclude(studentprofile__course__in=student_registered_courses)
+
+        if self.course in student_registered_courses:
+            return super().dispatch(request)
+        else:
+            messages.error(request, "You have not registered this course{0} ".format(self.course.title))
+            return render(request, 'student_registered_courses.html',
+                          {'student_registered_courses': student_registered_courses, \
+                           'unregistered_courses': unregistered_courses})
+        # register student to course
+
+
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')

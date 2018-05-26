@@ -17,7 +17,10 @@
   <h2 class="mb-3">My Courses</h2>
   <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
     {% endif %}
-
+   {% if request.user.is_student %}
+  <h2 class="mb-3">My Courses</h2>
+  <a href="{% url 'student:registered_course_list' %}" class="btn btn-primary mb-3" role="button">View Registered Courses</a>
+    {% endif %}
   <div class="card">
     <table class="table mb-0">
       <thead>
@@ -45,8 +48,7 @@
               <a href="{% url 'instructor:quiz_add' course.pk %}" class="btn btn-primary">Create Quiz</a>
                 {% endif %}
             {% if request.user.is_student %}
-              <a href="#" class="btn btn-primary">Register Course</a>
-
+              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>
             {% endif %}
             </td>
 

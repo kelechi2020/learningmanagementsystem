@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  {% include 'classroom/students/_header.html' with active='taken' %}
+  {% include '_header.html' with active='taken' %}
   <div class="card">
     <table class="table mb-0">
       <thead>
         <tr>
           <th>Quiz</th>
-          <th>Subject</th>
+          <th>Course</th>
           <th>Score</th>
         </tr>
       </thead>
@@ -15,7 +15,7 @@
         {% for taken_quiz in taken_quizzes %}
           <tr>
             <td>{{ taken_quiz.quiz.name }}</td>
-            <td>{{ taken_quiz.quiz.subject.get_html_badge }}</td>
+            <td>{{ taken_quiz.quiz.course }}</td>
             <td>{{ taken_quiz.score }}</td>
           </tr>
         {% empty %}

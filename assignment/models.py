@@ -12,7 +12,7 @@ class Assignment(models.Model):
     assign_description = models.CharField(max_length=100, verbose_name="Assignment Description")
     assignment_body = models .TextField(verbose_name="Assignment Content")
     date_created = models.DateTimeField(auto_now_add=True)
-    created_by = models.OneToOneField(Instructor,on_delete=models.PROTECT)
+    created_by = models.OneToOneField(Instructor, on_delete=models.PROTECT)
     assignment_due_date = models.DateTimeField()
     course = models.ForeignKey(Course, verbose_name="Course name", on_delete=models.PROTECT)
     course_title = models.CharField(max_length=200, verbose_name="Course Title")

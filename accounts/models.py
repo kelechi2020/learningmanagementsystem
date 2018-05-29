@@ -10,10 +10,10 @@ class User(AbstractUser):
     is_student = models.BooleanField(default=False)
     is_instructor = models.BooleanField(default=False)
     is_teaching_assistant = models.BooleanField(default=False)
-    is_guest = models.BooleanField(default=False)
+    is_observer = models.BooleanField(default=False)
 
 
-class GuestProfile(models.Model):
+class ObserverProfile(models.Model):
     """
     Instructors Profile
     """

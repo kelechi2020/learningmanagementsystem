@@ -2,6 +2,7 @@
 from django.db import models
 from accounts.models import User
 from course.models import Course
+from quiz.models import Answer
 
 
 class StudentProfile(models.Model):
@@ -49,3 +50,8 @@ class StudentTakenQuiz(models.Model):
     quiz = models.ForeignKey('quiz.Quiz', on_delete=models.CASCADE, related_name='taken_quizzes')
     score = models.FloatField()
     date = models.DateTimeField(auto_now_add=True)
+
+
+class StudentAnswer(models.Model):
+    student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE, related_name='quiz_answers')
+    answer = models.ForeignKey('quiz.Answer', on_delete=models.CASCADE, related_name='+')

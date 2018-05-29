@@ -4,7 +4,7 @@ from django.db import models
 from accounts.models import User
 from course.models import Course
 from instructor.models import Instructor
-from student.models import StudentProfile
+
 
 
 class Quiz(models.Model):
@@ -33,8 +33,6 @@ class Answer(models.Model):
         return self.text
 
 
-class StudentAnswer(models.Model):
-    student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE, related_name='quiz_answers')
-    answer = models.ForeignKey(Answer, on_delete=models.CASCADE, related_name='+')
+
 
 

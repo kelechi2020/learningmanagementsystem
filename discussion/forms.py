@@ -1,7 +1,8 @@
 # coding=utf-8
 from django import forms
 
-from discussion.models import Post
+from course.models import Course
+from discussion.models import Post, Board
 from .models import Topic
 
 
@@ -20,3 +21,16 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['message', ]
+
+
+class NewBoardForm(forms.ModelForm):
+    course = forms.ModelChoiceField(queryset=Course.objects.none())
+
+    class Meta:
+        model = Board
+        fields = ('name', 'course','description')
+
+    def __init__(self, *args, **kwargs):
+        user = kwargs.pop('current_user')
+        super().__init__(*args, **kwargs)
+        self.fields['course'].queryset = Course.objects.filter(creator=user)

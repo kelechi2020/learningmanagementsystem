@@ -1,7 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.db import transaction
 
-from accounts.models import User, GuestProfile
+from accounts.models import User, ObserverProfile
 from instructor.models import Instructor
 from student.models import StudentProfile
 from teaching_assistant.models import TeachingAssistant
@@ -46,14 +46,14 @@ class StudentSignUpForm(UserCreationForm):
         return user
 
 
-class GuestSignUpForm(UserCreationForm):
+class ObserverSignUpForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = User
 
     def save(self, commit=True):
         user = super().save(commit=False)
-        user.is_guest = True
+        user.is_observer = True
         if commit:
             user.save()
-            GuestProfile.objects.create(user=user)
+            ObserverProfile.objects.create(user=user)
         return user

@@ -19,7 +19,6 @@ class Course(models.Model):
     class Meta:
         verbose_name_plural = 'Course'
 
-
     def __str__(self):
         return self.title
 

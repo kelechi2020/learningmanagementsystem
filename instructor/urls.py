@@ -18,7 +18,7 @@ urlpatterns = [
         path('topic/<int:pk>/delete/', TopicDeleteView.as_view(), name='topic_delete'),
 
         path('quiz', QuizListView.as_view(), name='quiz_change_list'),
-        path('quiz/add/<int:course_pk>/$', QuizCreateView.as_view(), name='quiz_add'),
+        path('quiz/add/<int:course_pk>/', QuizCreateView.as_view(), name='quiz_add'),
         # path('quiz/add/<int:course_pk>/', quizcreate, name='quiz_add'),
         path('quiz/<int:pk>/', QuizUpdateView.as_view(), name='quiz_change'),
         path('quiz/<int:pk>/delete/', QuizDeleteView.as_view(), name='quiz_delete'),

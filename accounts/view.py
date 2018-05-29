@@ -14,4 +14,4 @@ def home(request):
             return redirect('instructor:course_change_list')
         else:
             return redirect('student:quiz_list')
-    return render(request, 'home.html')
+    return redirect('login')

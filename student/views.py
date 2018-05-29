@@ -84,8 +84,8 @@ def course_registration(request, course_pk):
 
     if course in student_registered_courses:
         messages.error(request, "This Course {0} has been registered ".format(course.title))
-        return render(request, 'student_registered_courses.html', {'student_registered_courses':student_registered_courses, \
-                                                                   'unregistered_courses':unregistered_courses})
+        return render(request, 'student_registered_courses.html', {'student_registered_courses': student_registered_courses, \
+                                                                   'unregistered_courses': unregistered_courses})
     #register student to course
     student.course.add(course)
     messages.success(request, "the course {0} was successfully added".format(course.title))
@@ -95,21 +95,18 @@ def course_registration(request, course_pk):
 
 
 
-
-
-
 @method_decorator([login_required, student_required], name='dispatch')
 class QuizListView(ListView):
     model = Quiz
     ordering = ('name', )
     context_object_name = 'quizzes'
-    template_name = 'classroom/students/quiz_list.html'
+    template_name = 'quiz_list.html'
 
     def get_queryset(self):
-        student = self.request.user
-        student_interests = student.interests.values_list('pk', flat=True)
-        taken_quizzes = student.quizzes.values_list('pk', flat=True)
-        queryset = Quiz.objects.filter(subject__in=student_interests) \
+        student = get_object_or_404(StudentProfile, user=self.request.user)
+        student_courses = student.course.values_list('pk', flat=True)
+        taken_quizzes = student.student_quizzes.values_list('pk', flat=True)
+        queryset = Quiz.objects.filter(course__in=student_courses) \
             .exclude(pk__in=taken_quizzes) \
             .annotate(questions_count=Count('questions')) \
             .filter(questions_count__gt=0)
@@ -120,11 +117,12 @@ class QuizListView(ListView):
 class TakenQuizListView(ListView):
     model = StudentTakenQuiz
     context_object_name = 'taken_quizzes'
-    template_name = 'classroom/students/taken_quiz_list.html'
+    template_name = 'taken_quiz_list.html'
 
     def get_queryset(self):
-        queryset = self.request.user.student.taken_quizzes \
-            .select_related('quiz', 'quiz__subject') \
+        student = get_object_or_404(StudentProfile, user=self.request.user)
+        queryset = student.taken_quizzes \
+            .select_related('quiz', 'quiz__course') \
             .order_by('quiz__name')
         return queryset
 
@@ -134,10 +132,11 @@ class TakenQuizListView(ListView):
 def take_quiz(request, pk):
 
     quiz = get_object_or_404(Quiz, pk=pk)
-    student = request.user.student
+    student = get_object_or_404(StudentProfile, user=request.user)
 
-    if student.quizzes.filter(pk=pk).exists():
-        return render(request, 'students/taken_quiz.html')
+    if student.student_quizzes.filter(pk=pk).exists():
+        messages.error(request, "You have already taken this quiz")
+        return redirect('student:taken_quiz_list')
 
     total_questions = quiz.questions.count()
     unanswered_questions = student.get_unanswered_questions(quiz)
@@ -153,12 +152,9 @@ def take_quiz(request, pk):
                 student_answer.student = student
                 student_answer.save()
                 if student.get_unanswered_questions(quiz).exists():
-                    print("we still have un answered questions")
                     return redirect('student:take_quiz', pk)
                 else:
-                    print("here")
                     correct_answers = student.quiz_answers.filter(answer__question__quiz=quiz, answer__is_correct=True).count()
-                    print(correct_answers)
                     score = round((correct_answers / total_questions) * 100.0, 2)
                     StudentTakenQuiz.objects.create(student=student, quiz=quiz, score=score)
                     if score < 50.0:
@@ -169,7 +165,7 @@ def take_quiz(request, pk):
     else:
         form = TakeQuizForm(question=question)
 
-    return render(request, 'classroom/students/take_quiz_form.html', {
+    return render(request, 'take_quiz_form.html', {
         'quiz': quiz,
         'question': question,
         'form': form,

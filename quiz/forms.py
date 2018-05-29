@@ -3,7 +3,8 @@ from django.forms.utils import ValidationError
 from django.shortcuts import get_object_or_404
 
 from course.models import Course
-from quiz.models import Question, Answer, StudentAnswer, Quiz
+from quiz.models import Question, Answer, Quiz
+from student.models import StudentAnswer
 
 
 class QuestionForm(forms.ModelForm):

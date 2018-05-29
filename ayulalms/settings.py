@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'adminactions',
     'assignment',
     'buisness_logic',
+    'widget_tweaks',
 
     'teaching_assistant',
     'grades',

@@ -31,12 +31,13 @@ from accounts.views.student_signup import StudentSignUpView
 
 urlpatterns = (
     url(r'^__debug__/', include(debug_toolbar.urls)),
+    url(r'^$', home, name='home'),
+    url(r'^adminact/', include('adminactions.urls')),
     url(r'^instructor/', include('instructor.urls')),
     url(r'^student/', include('student.urls')),
     url(r'^discussion/', include('discussion.urls')),
     url(r'^admin/', admin.site.urls, name='admin'),
-    url(r'^home/$', home, name='home'),
-    url(r'^$', LoginView.as_view(template_name='login.html'), name='login'),
+    url(r'^login/$', LoginView.as_view(template_name='login.html'), name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^accounts/signup/$', SignUpView.as_view(), name='signup'),
     url(r'^accounts/signup/student/$', StudentSignUpView.as_view(), name='student_signup'),

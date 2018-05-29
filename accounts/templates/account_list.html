@@ -1,0 +1,33 @@
+{% extends 'externals/base.html' %}
+{% load static %}
+{% block javascript %}
+  <script src="{% static 'js/books.js' %}"></script>
+{% endblock %}
+{% block content %}
+<section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+      <table class="table" id="book-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            {% include 'account/includes/partial_account_list.html' %}
+        </tbody>
+      </table>
+
+            <div class="modal fade" id="modal-book">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    </div>
+                </div>
+            </div>
+            </div>
+</section>
+{% endblock %}

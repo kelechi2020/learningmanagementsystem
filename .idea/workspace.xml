@@ -2,353 +2,454 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3aac1e-18c3-4db2-a15d-33c1d1c6c57a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/test_form_signup.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/test_mail_password_reset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/tests/test_view_signup.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/templatetags/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/templatetags/form_tags.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_templatetags.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_view_board_topics.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_view_new_topic.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_view_reply_topic.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_view_topic_posts.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/discussion/tests/test_views.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/fonts/slick.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/fonts/slick.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/fonts/slick.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/fonts/slick.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-carousel-slick.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-carousel-slick.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-charts.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-charts.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-chat.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-chat.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-alerts.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-alerts.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-background.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-background.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-buttons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-buttons.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-calendar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-calendar.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-progress-bars.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-progress-bars.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-text.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-colors-text.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-cover.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-cover.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-essentials.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-essentials.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-layout.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-layout.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-maps.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-maps.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-material.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-material.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-media.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-media.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-messages.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-messages.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-navbar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-navbar.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-sidebar-skins.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-sidebar-skins.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-sidebar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-sidebar.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-timeline.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/module-timeline.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/select2-spinner.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/select2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/select2x2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/theme-bundle.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/theme-bundle.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/theme-core.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/theme-core.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/vendor.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/vendor.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/Material-Design-Iconic-Font.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/Material-Design-Iconic-Font.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/Material-Design-Iconic-Font.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/Material-Design-Iconic-Font.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-arrows.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-arrows.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-arrows.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-arrows.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-clothing.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-clothing.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-clothing.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-clothing.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-emotions.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-emotions.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-emotions.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-emotions.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-food.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-food.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-food.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-food.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-general.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-general.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-general.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-general.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-household.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-household.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-household.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-household.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-medical-science.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-medical-science.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-medical-science.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-medical-science.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-multimedia.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-multimedia.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-multimedia.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-multimedia.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-nature.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-nature.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-nature.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-nature.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-shopping-finance.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-shopping-finance.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-shopping-finance.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-shopping-finance.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-sports.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-sports.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-sports.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-sports.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-vehicle-navigation.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-vehicle-navigation.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-vehicle-navigation.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-vehicle-navigation.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-weather.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-weather.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-weather.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/picto-foundry-weather.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/flags/Flag_of_France.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/flags/Flag_of_Germany.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/flags/Flag_of_Poland.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/flags/Flag_of_Romania.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/flags/Flag_of_the_United_States.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/food1-full.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/food1-wide.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/food1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/learning-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-01.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-04.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-05.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-06.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-07.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-08.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-09.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/markers/building-10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/child-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/guy-9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/110/woman-9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/child-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/guy-9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/people/50/woman-9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/photodune-4161018-group-of-students-m.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/photodune-6745579-modern-creative-man-relaxing-on-workspace-m.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/photodune-6745585-modern-creative-workspace-m.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place1-full.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place1-wide.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place2-full.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place2-wide.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place3-full.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place3-wide.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/place3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/images/profile-cover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/data/google_maps/markers.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/jplayer/addons/jquery.jplayer.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-bundle-all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-bundle-all.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-bundle-main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-bundle-main.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-carousel-slick.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-carousel-slick.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-all.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-easy-pie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-easy-pie.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-flot.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-flot.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-morris.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-morris.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-sparkline.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-charts-sparkline.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-chat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-chat.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-essentials.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-essentials.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-layout.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-layout.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-maps-google.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-maps-google.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-maps.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-maps.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-material.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-material.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-media.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-media.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-messages.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-messages.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-player.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-player.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-sidebar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/module-sidebar.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/addons/infobox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/addons/infobox_packed.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/addons/markerclusterer.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.extensions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.microdata.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.microformat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.overlays.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.rdfa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/plugins/maps_google/jquery-ui-map/ui/jquery.ui.map.services.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/theme-core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/theme-core.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-bundle-all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-bundle-all.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-carousel-slick.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-carousel-slick.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-charts-all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-charts-all.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-charts-flot.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-charts-flot.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-core.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-countdown.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-countdown.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-forms.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-forms.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-media.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-media.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-nestable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-nestable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-player.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-player.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-tables.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/vendor-tables.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/base_accounts.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/create_discussion_board.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/discussion_home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/externals/base.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/includes/form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/login/base.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/new_topic.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_change.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_change_done.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset_complete.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset_confirm.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset_done.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset_email.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/password_reset_subject.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/reply_topic.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/signup.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/topic_posts.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/topics.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf96e5b8-2ac5-4b65-83f2-57492e7ae810.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cf96e5b8-2ac5-4b65-83f2-57492e7ae810.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_delete.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/templates/account/includes/partial_book_form.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/accounts/templates/account_list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/adminactions/urls.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/accounts.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/custom.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/fontastic.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.blue.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.default.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.green.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.pink.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.red.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.sea.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/css/style.violet.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/data/addresses.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/data/countries.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/dashboard.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/dashboard.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/dashboard.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/fonts/dashboard.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/fonts/dashboard.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/fonts/dashboard.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/fonts/dashboard.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/fonts/dashboard.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/icons-reference.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/icons-reference/styles.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/avatar-6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/bg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/AZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/BZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/CZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/DZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/EC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/EE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/EG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/EH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ER.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ES.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ET.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/EU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/FR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/GY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/HK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/HN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/HR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/HT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/HU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ID.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/IT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/JE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/JM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/JO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/JP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/KZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/LY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ME.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ML.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/MZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/NZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/OM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/PY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/QA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/RE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/RO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/RS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/RU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/RW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ST.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/SZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/TZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/UA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/UG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/US.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/UY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/UZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/VU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/WF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/WS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/YE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/YT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ZA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ZM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/ZW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_abkhazia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_basque-country.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_british-antarctic-territory.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_commonwealth.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_england.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_gosquared.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_kosovo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_mars.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_nagorno-karabakh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_nato.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_northern-cyprus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_olympics.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_red-cross.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_scotland.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_somaliland.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_south-ossetia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_united-nations.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_unknown.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/flags/16/_wales.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-blue.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-default.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-green.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-pink.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-red.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-sea.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker-violet.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/map-marker.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/mockup7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/multiselect-switch.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/project-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/project-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/project-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/project-4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/img/template-mac.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/charts-custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/charts-home.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/js/front.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/js/bootstrap.bundle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.bundle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/HELP-US-OUT.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/additional-methods.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/jquery.validate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/jquery.validate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_bn_BD.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_es_AR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_es_PE.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ge.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_hy_AM.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_kk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_my.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_pt_BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_pt_PT.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sr_lat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_tj.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_ur.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/messages_zh_TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/methods_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/methods_es_CL.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/methods_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/methods_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/localization/methods_pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery.cookie/MIT-LICENSE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery.cookie/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery.cookie/cookie.jquery.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery.cookie/jquery.cookie.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery/jquery.slim.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery/jquery.slim.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/esm/popper-utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/esm/popper-utils.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/esm/popper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/esm/popper.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/popper-utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/popper-utils.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/popper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/popper.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/umd/popper-utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/umd/popper-utils.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/umd/popper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/externals/vendor/popper.js/umd/popper.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/books.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-3.2.1.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/popper.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/externals/admin_dashboard.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/accounts/forms.py" afterPath="$PROJECT_DIR$/accounts/forms.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change beforePath="$PROJECT_DIR$/accounts/decorators.py" afterPath="$PROJECT_DIR$/accounts/decorators.py" />
       <change beforePath="$PROJECT_DIR$/accounts/view.py" afterPath="$PROJECT_DIR$/accounts/view.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/views/guest_signup.py" afterPath="$PROJECT_DIR$/accounts/views/guest_signup.py" />
+      <change beforePath="$PROJECT_DIR$/accounts/views/classroom.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/adminactions/admin.py" afterPath="$PROJECT_DIR$/adminactions/admin.py" />
-      <change beforePath="$PROJECT_DIR$/assignment/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/models.py" afterPath="$PROJECT_DIR$/assignment/models.py" />
-      <change beforePath="$PROJECT_DIR$/ayulalms/settings.py" afterPath="$PROJECT_DIR$/ayulalms/settings.py" />
+      <change beforePath="$PROJECT_DIR$/adminactions/views.py" afterPath="$PROJECT_DIR$/adminactions/views.py" />
       <change beforePath="$PROJECT_DIR$/ayulalms/urls.py" afterPath="$PROJECT_DIR$/ayulalms/urls.py" />
-      <change beforePath="$PROJECT_DIR$/course/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/course/migrations/0002_remove_course_instructor.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/course/migrations/0003_auto_20180524_1602.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/course/models.py" afterPath="$PROJECT_DIR$/course/models.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/discussion/apps.py" afterPath="$PROJECT_DIR$/discussion/apps.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/forms.py" afterPath="$PROJECT_DIR$/discussion/forms.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/discussion/migrations/0002_auto_20180523_1300.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/discussion/models.py" afterPath="$PROJECT_DIR$/discussion/models.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/urls.py" afterPath="$PROJECT_DIR$/discussion/urls.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/views.py" afterPath="$PROJECT_DIR$/discussion/views.py" />
-      <change beforePath="$PROJECT_DIR$/instructor/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/instructor/migrations/0002_instructor_course.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/course_change_list.html" afterPath="$PROJECT_DIR$/instructor/templates/course_change_list.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/urls.py" afterPath="$PROJECT_DIR$/instructor/urls.py" />
-      <change beforePath="$PROJECT_DIR$/quiz/forms.py" afterPath="$PROJECT_DIR$/quiz/forms.py" />
-      <change beforePath="$PROJECT_DIR$/quiz/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/migrations/0002_auto_20180523_1131.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/migrations/0003_auto_20180523_1158.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/migrations/0004_auto_20180524_1204.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/models.py" afterPath="$PROJECT_DIR$/quiz/models.py" />
-      <change beforePath="$PROJECT_DIR$/student/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/student/migrations/0002_auto_20180523_1131.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/student/migrations/0003_auto_20180523_1216.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/student/migrations/0004_auto_20180524_1602.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/student/models.py" afterPath="$PROJECT_DIR$/student/models.py" />
-      <change beforePath="$PROJECT_DIR$/student/templates/_header.html" afterPath="$PROJECT_DIR$/student/templates/_header.html" />
-      <change beforePath="$PROJECT_DIR$/student/templates/quiz_list.html" afterPath="$PROJECT_DIR$/student/templates/quiz_list.html" />
-      <change beforePath="$PROJECT_DIR$/student/templates/taken_quiz_list.html" afterPath="$PROJECT_DIR$/student/templates/taken_quiz_list.html" />
-      <change beforePath="$PROJECT_DIR$/student/views.py" afterPath="$PROJECT_DIR$/student/views.py" />
-      <change beforePath="$PROJECT_DIR$/teaching_assistant/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/teaching_assistant/migrations/0002_teachingassistant_course.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/static/css/teachers.css" afterPath="$PROJECT_DIR$/static/css/instructor.css" />
+      <change beforePath="$PROJECT_DIR$/student/urls.py" afterPath="$PROJECT_DIR$/student/urls.py" />
+      <change beforePath="$PROJECT_DIR$/templates/externals/base.html" afterPath="$PROJECT_DIR$/templates/externals/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -393,12 +494,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/view.py">
+      <file leaf-file-name="account_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accounts/templates/account_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="690">
+              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="31" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partial_account_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminactions/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -406,25 +529,47 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="45">
+              <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_signup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/views/student_signup.py">
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="209">
+              <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="222" column="49" lean-forward="false" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -433,32 +578,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminactions/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="230">
+              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -475,8 +602,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>home</find>
-      <find>ImageField</find>
       <find>foreignkey</find>
       <find>teacher_</find>
       <find>subject</find>
@@ -504,6 +629,9 @@
       <find>guest</find>
       <find>center</find>
       <find>content</find>
+      <find>include</find>
+      <find>example</find>
+      <find>english</find>
     </findStrings>
     <replaceStrings>
       <replace>FileField</replace>
@@ -520,17 +648,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/teaching_assistant/models.py" />
-        <option value="$PROJECT_DIR$/instructor/models.py" />
-        <option value="$PROJECT_DIR$/forums/apps.py" />
-        <option value="$PROJECT_DIR$/discussion/migrations/0002_auto_20180523_1300.py" />
-        <option value="$PROJECT_DIR$/teaching_assistant/urls.py" />
-        <option value="$PROJECT_DIR$/assignment/urls.py" />
         <option value="$PROJECT_DIR$/course/urls.py" />
         <option value="$PROJECT_DIR$/quiz/urls.py" />
         <option value="$PROJECT_DIR$/instructor/forms.py" />
-        <option value="$PROJECT_DIR$/accounts/views/classroom.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/course/migrations/0003_auto_20180524_1602.py" />
         <option value="$PROJECT_DIR$/instructor/templates/course_change_form.html" />
@@ -539,7 +659,6 @@
         <option value="$PROJECT_DIR$/instructor/views.py" />
         <option value="$PROJECT_DIR$/student/templates/course_list.html" />
         <option value="$PROJECT_DIR$/student/templates/student_registered_courses.html" />
-        <option value="$PROJECT_DIR$/student/urls.py" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
         <option value="$PROJECT_DIR$/student/templates/take_course.html" />
         <option value="$PROJECT_DIR$/course/models.py" />
@@ -560,17 +679,26 @@
         <option value="$PROJECT_DIR$/ayulalms/settings.py" />
         <option value="$PROJECT_DIR$/discussion/views.py" />
         <option value="$PROJECT_DIR$/templates/topic_posts.html" />
-        <option value="$PROJECT_DIR$/adminactions/admin.py" />
-        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
         <option value="$PROJECT_DIR$/templates/login/base.html" />
         <option value="$PROJECT_DIR$/templates/base_accounts.html" />
         <option value="$PROJECT_DIR$/instructor/templates/course_change_list.html" />
         <option value="$PROJECT_DIR$/course/views.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/adminactions/views.py" />
+        <option value="$PROJECT_DIR$/accounts/views/classroom.py" />
+        <option value="$PROJECT_DIR$/student/urls.py" />
+        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
+        <option value="$PROJECT_DIR$/templates/externals/admin_dashboard.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/accounts/decorators.py" />
+        <option value="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_delete.html" />
         <option value="$PROJECT_DIR$/accounts/view.py" />
         <option value="$PROJECT_DIR$/templates/externals/base.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/adminactions/urls.py" />
+        <option value="$PROJECT_DIR$/adminactions/admin.py" />
+        <option value="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/account_list.html" />
       </list>
     </option>
   </component>
@@ -580,9 +708,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="28" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1380" />
     <option name="height" value="744" />
   </component>
@@ -613,7 +741,44 @@
             <path>
               <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="adminactions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="instructor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="instructor" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
@@ -647,11 +812,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\accounts\templates" />
+      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\static" />
+      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\static\css" />
       <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\static\externals" />
       <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\templates\login" />
-      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\templates" />
-      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\accounts" />
-      <recent name="C:\Users\KELECHI\PycharmProjects\ayulalms\discussion" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -717,18 +882,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="28" width="1380" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924694" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.50303954" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.4969605" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3726813" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22596964" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38448566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21060605" sideWeight="0.49115044" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2112462" sideWeight="0.49115044" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37223974" sideWeight="0.5104167" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37158054" sideWeight="0.5104167" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22596964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18009119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17325228" sideWeight="0.50884956" order="0" side_tool="true" content_ui="tabs" />
@@ -776,118 +942,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views/instructor_signup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.student_studentcourses_student_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.student_studentprofile_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.course_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.instructor_instructor_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.instructor_instructor">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/templates/take_course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.quiz_quiz">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instructor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/templates/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayulla/Lib/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="937" column="8" lean-forward="true" selection-start-line="937" selection-start-column="8" selection-end-line="937" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="e#15#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -914,36 +968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="131" column="27" lean-forward="false" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-          <folding>
-            <element signature="e#15#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/discussion/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instructor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1026,16 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminactions/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#15#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ayulla/Lib/site-packages/django/contrib/auth/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1064,14 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1110,14 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_accounts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/externals/css/vendor.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-897">
@@ -1142,42 +1144,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/externals/css/vendor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="6980" column="28" lean-forward="false" selection-start-line="6980" selection-start-column="22" selection-end-line="6980" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1190,10 +1160,211 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="131" column="27" lean-forward="false" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views/classroom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminactions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/students.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding>
+            <element signature="e#2710#2717#1#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/student_registered_courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_accounts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instructor/templates/quiz_change_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/account/includes/partial_account_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instructor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminactions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.accounts_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminactions/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="222" column="49" lean-forward="false" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/account_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="31" selection-end-column="10" />
           <folding />
         </state>
       </provider>

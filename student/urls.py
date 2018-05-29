@@ -1,13 +1,10 @@
 # coding=utf-8
 from django.urls import include, path
-from accounts.views import classroom
 from course.views import CourseDetailView
 from student.views import QuizListView, TakenQuizListView, take_quiz, CourseListView, course_registration, \
     RegisteredCourseListView
 
 urlpatterns = [
-    path('', classroom.home, name='home'),
-
     path('student/', include(([
         path('', CourseListView.as_view(), name='course_change_list'),
         path('viewcourse/<int:course_pk>/', CourseDetailView.as_view(), name='course_detail'),

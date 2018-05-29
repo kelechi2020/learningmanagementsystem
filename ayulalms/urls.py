@@ -24,10 +24,7 @@ from django.contrib.auth.views import LoginView, LogoutView,  \
     PasswordChangeDoneView
 
 from accounts.view import SignUpView, home
-from accounts.views.assistant_signup import AssistantSignUpView
-from accounts.views.guest_signup import ObserverSignUpView
-from accounts.views.instructor_signup import InstructorSignUpView
-from accounts.views.student_signup import StudentSignUpView
+w
 
 urlpatterns = (
     url(r'^__debug__/', include(debug_toolbar.urls)),
@@ -40,10 +37,7 @@ urlpatterns = (
     url(r'^login/$', LoginView.as_view(template_name='login.html'), name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^accounts/signup/$', SignUpView.as_view(), name='signup'),
-    url(r'^accounts/signup/student/$', StudentSignUpView.as_view(), name='student_signup'),
-    url(r'^accounts/signup/instructor/$', InstructorSignUpView.as_view(), name='instructor_signup'),
-    url(r'^accounts/signup/assistant/$', AssistantSignUpView.as_view(), name='assistant_signup'),
-    url(r'^accounts/signup/guest/$', ObserverSignUpView.as_view(), name='guest_signup'),
+
     url(r'^reset/$', PasswordResetView.as_view(
             template_name='password_reset.html',
             email_template_name='password_reset_email.html',

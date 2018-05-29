@@ -54,7 +54,7 @@ class AjaxableResponseMixin:
 
 
 @method_decorator([login_required, admin_required], name='dispatch')
-class InstructorsListView(AjaxableResponseMixin, ListView):
+class InstructorsListView(ListView):
     """
     Returns list of quiz created by the currently logged in tutor
     """
@@ -62,6 +62,12 @@ class InstructorsListView(AjaxableResponseMixin, ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
+    paginate_by = 4
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['account_type'] = "Instructor"
+        return context
 
     def get_queryset(self):
         """
@@ -73,7 +79,7 @@ class InstructorsListView(AjaxableResponseMixin, ListView):
 
 
 @method_decorator([login_required, admin_required], name='dispatch')
-class StudentsListView(AjaxableResponseMixin, ListView):
+class StudentsListView(ListView):
     """
     Returns list of quiz created by the currently logged in tutor
     """
@@ -81,6 +87,12 @@ class StudentsListView(AjaxableResponseMixin, ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
+    paginate_by = 4
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['account_type'] = "Student"
+        return context
 
     def get_queryset(self):
         """
@@ -92,7 +104,7 @@ class StudentsListView(AjaxableResponseMixin, ListView):
 
 
 @method_decorator([login_required, admin_required], name='dispatch')
-class ObserversListView(AjaxableResponseMixin, ListView):
+class ObserversListView(ListView):
     """
     Returns list of quiz created by the currently logged in tutor
     """
@@ -100,6 +112,12 @@ class ObserversListView(AjaxableResponseMixin, ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
+    paginate_by = 4
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['account_type'] = "Observer"
+        return context
 
     def get_queryset(self):
         """

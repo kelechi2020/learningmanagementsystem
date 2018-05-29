@@ -5,12 +5,11 @@
           <td>{{ account.email }}</td>
           <td>{{ account.first_name }}</td>
           <td>{{ account.last_name }}</td>
-
             <td>
 
               <button type="button"
                       class="btn btn-danger btn-sm js-delete-book"
-                      data-url="{% url 'book_delete' account.id %}">
+                      data-url="{% url 'account_delete' account.id %}">
                 <span class="glyphicon glyphicon-trash"></span> Delete
               </button>
             </td>

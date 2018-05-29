@@ -3,6 +3,11 @@
 {% block javascript %}
   <script src="{% static 'js/books.js' %}"></script>
 {% endblock %}
+          {% block header %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom justify-content-center"> {{ account_type }} Accounts</h2>
+            </div>
+          {% endblock header %}
 {% block content %}
 <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
@@ -18,9 +23,13 @@
           </tr>
         </thead>
         <tbody>
+
             {% include 'account/includes/partial_account_list.html' %}
         </tbody>
       </table>
+                <div class="container-fluid">
+                   {% include 'account/includes/pagination.html' %}
+                </div>
 
             <div class="modal fade" id="modal-book">
                 <div class="modal-dialog">
@@ -30,4 +39,6 @@
             </div>
             </div>
 </section>
+
+
 {% endblock %}

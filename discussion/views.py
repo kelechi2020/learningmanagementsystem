@@ -1,10 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 from django.db.models import Count
 from django.shortcuts import render, get_object_or_404, redirect
-
-# Create your views here.
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView
@@ -46,7 +43,6 @@ class BoardCreateView(CreateView):
         board.save()
         messages.success(self.request, 'The Board was created with success! Go ahead and add some Topics  now.')
         return redirect('discussion_home')
-
 
 
 def board_topics(request, pk):

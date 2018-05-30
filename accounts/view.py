@@ -18,12 +18,12 @@ def home(request):
             return redirect('instructor:course_change_list')
         elif request.user.is_staff:
             return redirect('admin_home')
-        elif request.user.is_teaching_assistant:
-            return redirect('student:quiz_list')
+        # elif request.user.is_teaching_assistant:
+        #     return redirect('student:quiz_list')
         elif request.user.is_student:
-            return redirect('student:quiz_list')
-        elif request.user.is_observer:
-            return redirect('student:quiz_list')
+            return redirect('student:course_change_list')
+        # elif request.user.is_observer:
+        #     return redirect('student:quiz_list')
     return redirect('login')
 
 

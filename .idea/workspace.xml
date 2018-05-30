@@ -2,62 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3aac1e-18c3-4db2-a15d-33c1d1c6c57a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/adminactions/forms.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/externals/course_list_admin.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf96e5b8-2ac5-4b65-83f2-57492e7ae810.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cf96e5b8-2ac5-4b65-83f2-57492e7ae810.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/accounts/decorators.py" afterPath="$PROJECT_DIR$/accounts/decorators.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/forms.py" afterPath="$PROJECT_DIR$/accounts/forms.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/account_list.html" afterPath="$PROJECT_DIR$/accounts/templates/account_list.html" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/accounts/view.py" afterPath="$PROJECT_DIR$/accounts/view.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/views/assistant_signup.py" afterPath="$PROJECT_DIR$/accounts/views/assistant_signup.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/views/guest_signup.py" afterPath="$PROJECT_DIR$/accounts/views/guest_signup.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/views/instructor_signup.py" afterPath="$PROJECT_DIR$/accounts/views/instructor_signup.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/views/student_signup.py" afterPath="$PROJECT_DIR$/accounts/views/student_signup.py" />
-      <change beforePath="$PROJECT_DIR$/adminactions/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/adminactions/urls.py" afterPath="$PROJECT_DIR$/adminactions/urls.py" />
       <change beforePath="$PROJECT_DIR$/adminactions/views.py" afterPath="$PROJECT_DIR$/adminactions/views.py" />
-      <change beforePath="$PROJECT_DIR$/assignment/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ayulalms/settings.py" afterPath="$PROJECT_DIR$/ayulalms/settings.py" />
       <change beforePath="$PROJECT_DIR$/ayulalms/urls.py" afterPath="$PROJECT_DIR$/ayulalms/urls.py" />
-      <change beforePath="$PROJECT_DIR$/buisness_logic/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/course/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/course/views.py" afterPath="$PROJECT_DIR$/course/views.py" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/grades/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/course_add_form.html" afterPath="$PROJECT_DIR$/instructor/templates/course_add_form.html" />
+      <change beforePath="$PROJECT_DIR$/discussion/views.py" afterPath="$PROJECT_DIR$/discussion/views.py" />
       <change beforePath="$PROJECT_DIR$/instructor/templates/course_change_list.html" afterPath="$PROJECT_DIR$/instructor/templates/course_change_list.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/course_delete_confirm.html" afterPath="$PROJECT_DIR$/instructor/templates/course_delete_confirm.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/question_add_form.html" afterPath="$PROJECT_DIR$/instructor/templates/question_add_form.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/question_change_form.html" afterPath="$PROJECT_DIR$/instructor/templates/question_change_form.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/quiz_add_form.html" afterPath="$PROJECT_DIR$/instructor/templates/quiz_add_form.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/quiz_change_form.html" afterPath="$PROJECT_DIR$/instructor/templates/quiz_change_form.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/quiz_change_list.html" afterPath="$PROJECT_DIR$/instructor/templates/quiz_change_list.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/quiz_results.html" afterPath="$PROJECT_DIR$/instructor/templates/quiz_results.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/topic_add_form.html" afterPath="$PROJECT_DIR$/instructor/templates/topic_add_form.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/templates/topic_change_list.html" afterPath="$PROJECT_DIR$/instructor/templates/topic_change_list.html" />
-      <change beforePath="$PROJECT_DIR$/instructor/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.bundle.js" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.js" afterPath="$PROJECT_DIR$/static/externals/vendor/chart.js/Chart.js" />
-      <change beforePath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/additional-methods.js" afterPath="$PROJECT_DIR$/static/externals/vendor/jquery-validation/additional-methods.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/books.js" afterPath="$PROJECT_DIR$/static/js/accounts.js" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/student/templates/_header.html" afterPath="$PROJECT_DIR$/student/templates/_header.html" />
+      <change beforePath="$PROJECT_DIR$/student/templates/interests_form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/student/templates/quiz_list.html" afterPath="$PROJECT_DIR$/student/templates/quiz_list.html" />
+      <change beforePath="$PROJECT_DIR$/student/templates/student_registered_courses.html" afterPath="$PROJECT_DIR$/student/templates/student_registered_courses.html" />
       <change beforePath="$PROJECT_DIR$/student/templates/take_course.html" afterPath="$PROJECT_DIR$/student/templates/take_course.html" />
       <change beforePath="$PROJECT_DIR$/student/templates/take_quiz_form.html" afterPath="$PROJECT_DIR$/student/templates/take_quiz_form.html" />
-      <change beforePath="$PROJECT_DIR$/student/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/teaching_assistant/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/create_discussion_board.html" afterPath="$PROJECT_DIR$/templates/create_discussion_board.html" />
-      <change beforePath="$PROJECT_DIR$/templates/discussion_home.html" afterPath="$PROJECT_DIR$/templates/discussion_home.html" />
-      <change beforePath="$PROJECT_DIR$/templates/externals/admin_dashboard.html" afterPath="$PROJECT_DIR$/templates/externals/admin_dashboard.html" />
+      <change beforePath="$PROJECT_DIR$/student/templates/taken_quiz_list.html" afterPath="$PROJECT_DIR$/student/templates/taken_quiz_list.html" />
+      <change beforePath="$PROJECT_DIR$/student/views.py" afterPath="$PROJECT_DIR$/student/views.py" />
       <change beforePath="$PROJECT_DIR$/templates/externals/base.html" afterPath="$PROJECT_DIR$/templates/externals/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/new_topic.html" afterPath="$PROJECT_DIR$/templates/new_topic.html" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/signup_form.html" afterPath="$PROJECT_DIR$/templates/registration/signup_form.html" />
-      <change beforePath="$PROJECT_DIR$/templates/reply_topic.html" afterPath="$PROJECT_DIR$/templates/reply_topic.html" />
-      <change beforePath="$PROJECT_DIR$/templates/topic_posts.html" afterPath="$PROJECT_DIR$/templates/topic_posts.html" />
-      <change beforePath="$PROJECT_DIR$/templates/topics.html" afterPath="$PROJECT_DIR$/templates/topics.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,128 +62,78 @@
     <favorites_list name="ayulalms" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1545">
-                  <caret line="19" column="5" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="question_change_form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/question_change_form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="question_add_form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/question_add_form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="course_delete_confirm.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/course_delete_confirm.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="course_add_form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/course_add_form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-87">
-                  <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="topic_change_list.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/topic_change_list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="topic_add_form.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/topic_add_form.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-87">
-                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="quiz_results.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/instructor/templates/quiz_results.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/discussion/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
-                  <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="create_discussion_board.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/create_discussion_board.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="65">
-                  <caret line="14" column="13" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="148" column="58" lean-forward="false" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="take_quiz_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/take_quiz_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="take_course.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/take_course.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1262">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taken_quiz_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/taken_quiz_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quiz_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/student/templates/quiz_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-897">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,7 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>teachers</find>
       <find>studentcourses</find>
       <find>students:</find>
       <find>get_conte</find>
@@ -256,7 +166,6 @@
       <find>include</find>
       <find>example</find>
       <find>english</find>
-      <find>url</find>
       <find>book_delete</find>
       <find>Studentprofile</find>
       <find>url(r</find>
@@ -264,6 +173,8 @@
       <find>if form.is</find>
       <find>coursede</find>
       <find>quiz</find>
+      <find>select_re</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>FileField</replace>
@@ -273,8 +184,9 @@
       <replace>Observer</replace>
       <replace />
       <replace>path(</replace>
-      <replace>account_delete</replace>
       <replace>course</replace>
+      <replace>account_delete</replace>
+      <replace>path</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -283,17 +195,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/accounts/views/classroom.py" />
-        <option value="$PROJECT_DIR$/student/urls.py" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_delete.html" />
-        <option value="$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html" />
         <option value="$PROJECT_DIR$/templates/includes/pagination.html" />
         <option value="$PROJECT_DIR$/accounts/templates/account/includes/pagination.html" />
         <option value="$PROJECT_DIR$/adminactions/admin.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
         <option value="$PROJECT_DIR$/templates/registration/signup_form.html" />
         <option value="$PROJECT_DIR$/templates/includes/form.html" />
         <option value="$PROJECT_DIR$/discussion/templatetags/form_tags.py" />
@@ -309,31 +214,38 @@
         <option value="$PROJECT_DIR$/accounts/decorators.py" />
         <option value="$PROJECT_DIR$/adminactions/forms.py" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
-        <option value="$PROJECT_DIR$/student/templates/take_quiz_form.html" />
         <option value="$PROJECT_DIR$/adminactions/urls.py" />
         <option value="$PROJECT_DIR$/templates/externals/course_list_admin.html" />
-        <option value="$PROJECT_DIR$/student/templates/take_course.html" />
         <option value="$PROJECT_DIR$/templates/discussion_home.html" />
         <option value="$PROJECT_DIR$/templates/topics.html" />
         <option value="$PROJECT_DIR$/templates/new_topic.html" />
         <option value="$PROJECT_DIR$/templates/topic_posts.html" />
         <option value="$PROJECT_DIR$/templates/reply_topic.html" />
-        <option value="$PROJECT_DIR$/accounts/view.py" />
-        <option value="$PROJECT_DIR$/adminactions/views.py" />
         <option value="$PROJECT_DIR$/instructor/templates/course_add_form.html" />
         <option value="$PROJECT_DIR$/instructor/templates/topic_add_form.html" />
-        <option value="$PROJECT_DIR$/instructor/templates/course_change_list.html" />
         <option value="$PROJECT_DIR$/instructor/templates/course_delete_confirm.html" />
         <option value="$PROJECT_DIR$/instructor/templates/question_add_form.html" />
         <option value="$PROJECT_DIR$/instructor/templates/quiz_add_form.html" />
         <option value="$PROJECT_DIR$/instructor/templates/quiz_change_list.html" />
         <option value="$PROJECT_DIR$/course/views.py" />
-        <option value="$PROJECT_DIR$/templates/externals/base.html" />
         <option value="$PROJECT_DIR$/instructor/templates/quiz_change_form.html" />
         <option value="$PROJECT_DIR$/instructor/templates/question_change_form.html" />
         <option value="$PROJECT_DIR$/instructor/templates/topic_change_list.html" />
         <option value="$PROJECT_DIR$/instructor/templates/quiz_results.html" />
         <option value="$PROJECT_DIR$/templates/create_discussion_board.html" />
+        <option value="$PROJECT_DIR$/discussion/views.py" />
+        <option value="$PROJECT_DIR$/accounts/view.py" />
+        <option value="$PROJECT_DIR$/instructor/templates/course_change_list.html" />
+        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
+        <option value="$PROJECT_DIR$/student/templates/take_course.html" />
+        <option value="$PROJECT_DIR$/adminactions/views.py" />
+        <option value="$PROJECT_DIR$/student/views.py" />
+        <option value="$PROJECT_DIR$/student/templates/student_registered_courses.html" />
+        <option value="$PROJECT_DIR$/templates/externals/base.html" />
+        <option value="$PROJECT_DIR$/student/templates/quiz_list.html" />
+        <option value="$PROJECT_DIR$/student/templates/_header.html" />
+        <option value="$PROJECT_DIR$/student/templates/take_quiz_form.html" />
+        <option value="$PROJECT_DIR$/student/templates/taken_quiz_list.html" />
       </list>
     </option>
   </component>
@@ -376,22 +288,17 @@
             <path>
               <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="discussion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
               <item name="instructor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="instructor" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -494,17 +401,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924694" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.50303954" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.4969605" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360877" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31703204" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24283305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.49115044" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.49115044" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2674772" sideWeight="0.5104167" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2674772" sideWeight="0.5104167" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3153457" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18009119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -553,72 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="49" column="25" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="54" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayulalms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views/assistant_signup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views/guest_signup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#15#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/account/includes/partial_account_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instructor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="149" column="38" lean-forward="true" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
@@ -672,26 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/templates/take_quiz_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -720,14 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/templates/take_course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/new_topic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,54 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminactions/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminactions/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1346">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/discussion/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instructor/templates/course_change_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="60" column="107" lean-forward="false" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -824,24 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="129" column="61" lean-forward="false" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -889,7 +643,7 @@
     <entry file="file://$PROJECT_DIR$/instructor/templates/question_add_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -897,7 +651,7 @@
     <entry file="file://$PROJECT_DIR$/instructor/templates/course_delete_confirm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -942,20 +696,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/discussion/views.py">
+    <entry file="file://$PROJECT_DIR$/course/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="127">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/discussion/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1545">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -963,6 +715,149 @@
     <entry file="file://$PROJECT_DIR$/templates/create_discussion_board.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instructor/templates/course_change_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3244e098/cf96e5b8-2ac5-4b65-83f2-57492e7ae810/main.course_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminactions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="91" column="38" lean-forward="false" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/student_registered_courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="92" column="76" lean-forward="false" selection-start-line="92" selection-start-column="76" selection-end-line="92" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminactions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="3" column="64" lean-forward="false" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/externals/admin_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/externals/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="148" column="58" lean-forward="false" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/take_quiz_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/take_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1262">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/taken_quiz_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/quiz_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
           <folding />
         </state>

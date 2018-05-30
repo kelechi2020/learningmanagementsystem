@@ -1,6 +1,23 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
-{% block content %}
+         {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Taken Quiz</h2>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
   {% include '_header.html' with active='taken' %}
   <div class="card">
     <table class="table mb-0">
@@ -26,4 +43,6 @@
       </tbody>
     </table>
   </div>
+            </div>
+    </section>
 {% endblock %}

@@ -10,28 +10,17 @@
                 </div>
               {% endfor %}
             <div class="container-fluid">
-              <h2 class="no-margin-bottom"> My Courses</h2>
+              <h2 class="no-margin-bottom"> Available Courses</h2>
             </div>
           {% endblock header %}
 
     {% block content %}
     <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
-  <nav aria-label="breadcrumb">
-  {% if request.user.is_student %}
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Available Courses</li>
-    </ol>
-  {% endif %}
 
-  </nav>
     {% if request.user.is_instructor %}
   <h2 class="mb-3">My Courses</h2>
   <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
-    {% endif %}
-   {% if request.user.is_student %}
-  <h2 class="mb-3">My Courses</h2>
-  <a href="{% url 'student:registered_course_list' %}" class="btn btn-primary mb-3" role="button">View Registered Courses</a>
     {% endif %}
   <div class="card">
     <table class="table mb-0">

@@ -1,8 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
 {% load crispy_forms_tags %}
+         {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom"> Admin Dashboard</h2>
+            </div>
+          {% endblock header %}
 
-{% block content %}
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
   <div class="progress mb-3">
     <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ progress }}%"></div>
   </div>
@@ -17,4 +33,6 @@
   <button type="submit" class="btn btn-primary">Next →</button>
         {% endif %}
   </form>
+            </div>
+    </section>
 {% endblock %}

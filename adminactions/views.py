@@ -25,6 +25,7 @@ class AdminCourseCreateView(CreateView):
     def form_valid(self, form):
         course = form.save(commit=False)
         course.creator = self.request.user
+        course.save()
         messages.success(self.request, 'The Course was created with success! Go ahead and add some quiz now.')
         return redirect('admin_list_courses')
 

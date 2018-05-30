@@ -1,12 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
-{% block content %}
+         {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom"> Course Summary</h2>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
   <nav aria-label="breadcrumb">
-  {% if request.user.is_student %}
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Available Courses</li>
-    </ol>
-  {% endif %}
   {% if request.user.is_instructor %}
     <ol class="breadcrumb">
       <li class="breadcrumb-item active" aria-current="page">My Courses</li>
@@ -17,7 +29,7 @@
   <h2 class="mb-3">My Courses</h2>
   <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
     {% endif %}
- <h2 class="mb-3">Not Registered Courses</h2>
+ <h2 class="mb-3">Un-Registered Courses</h2>
   <div class="card">
     <table class="table mb-0">
       <thead>
@@ -35,7 +47,7 @@
           <tr>
 
             <td class="align-middle">{{ course.title }}</td>
-            <td class="align-middle">{{ course.description}}</td>
+            <td class="align-middle">{{ course.description|truncatewords:12}}</td>
               {% if request.user.is_instructor %}
             <td class="align-middle">{{ course.created }}</td>
               {% endif %}
@@ -78,7 +90,7 @@
           <tr>
 
             <td class="align-middle">{{ course.title }}</td>
-            <td class="align-middle">{{ course.description}}</td>
+            <td class="align-middle">{{ course.description |truncatewords:12}}</td>
             <td class="text-right">
                <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Take Course</a>
 
@@ -94,4 +106,6 @@
       </tbody>
     </table>
   </div>
+            </div>
+    </section>
 {% endblock %}

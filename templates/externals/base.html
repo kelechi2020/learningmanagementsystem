@@ -33,12 +33,7 @@
       <header class="header">
         <nav class="navbar">
           <!-- Search Box-->
-          <div class="search-box">
-            <button class="dismiss"><i class="icon-close"></i></button>
-            <form id="searchForm" action="#" role="search">
-              <input type="search" placeholder="What are you looking for..." class="form-control">
-            </form>
-          </div>
+
           <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
@@ -65,7 +60,13 @@
             <div class="avatar"><img src="{% static 'externals/img/avatar-1.jpg' %}" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
               <h1 class="h4">{{ user.username }}</h1>
-              <p>Web Designer</p>
+              {% if user.is_instructor %}
+                <p>Course Instructor</p>
+                {% elif user.is_student %}
+                <p>Student</p>
+                {% elif user.is_staff %}
+                <p>Staff</p>
+                {% endif %}
             </div>
           </div>
           <!-- Sidebar Navidation Menus-->
@@ -143,9 +144,9 @@
             <!-- Student Side Panel -->
         {% if user.is_student %}
              <ul class="list-unstyled">
-                    <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-                    <li><a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
-                    <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
+                    <li class="active"><a href="{% url 'student:course_change_list' %}"> <i class="icon-home"></i>Courses </a></li>
+                    <li><a href="{% url 'student:registered_course_list' %}"> <i class="icon-grid"></i>Registered Course</a></li>
+                    <li><a href="{% url 'student:quiz_list' %}"> <i class="fa fa-bar-chart"></i>Quizzes </a></li>
                     <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
                     <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
                       <ul id="exampledropdownDropdown" class="collapse list-unstyled ">

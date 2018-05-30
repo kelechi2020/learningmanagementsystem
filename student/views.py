@@ -83,12 +83,12 @@ def course_registration(request, course_pk):
     unregistered_courses = Course.objects.exclude(studentprofile__course__in=student_registered_courses)
 
     if course in student_registered_courses:
-        messages.error(request, "This Course {0} has been registered ".format(course.title))
+        messages.error(request, "This Course {0} has been registered already ".format(course.title))
         return render(request, 'student_registered_courses.html', {'student_registered_courses': student_registered_courses, \
                                                                    'unregistered_courses': unregistered_courses})
     #register student to course
     student.course.add(course)
-    messages.success(request, "the course {0} was successfully added".format(course.title))
+    messages.success(request, "The course {0} was successfully added".format(course.title))
     return render(request, 'student_registered_courses.html', {'student_registered_courses': student_registered_courses, \
                                                                    'unregistered_courses':unregistered_courses})
 

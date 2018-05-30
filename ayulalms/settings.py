@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'assignment',
     'buisness_logic',
     'widget_tweaks',
-
     'teaching_assistant',
     'grades',
     'discussion'

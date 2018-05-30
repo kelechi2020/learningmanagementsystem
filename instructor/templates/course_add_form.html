@@ -1,15 +1,23 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
 {% load crispy_forms_tags %}
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Add a new Course</h2>
+            </div>
+          {% endblock header %}
 
-{% block content %}
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="{% url 'instructor:quiz_change_list' %}">My Quizzes</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Add a new quiz</li>
-    </ol>
-  </nav>
-  <h2 class="mb-3">Add a new quiz</h2>
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 col-sm-8 col-12">
       <form method="post" novalidate>
@@ -20,4 +28,6 @@
       </form>
     </div>
   </div>
+            </div>
+    </section>
 {% endblock %}

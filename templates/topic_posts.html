@@ -1,16 +1,28 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
 {% load static %}
 
 {% block title %}{{ topic.subject }}{% endblock %}
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'board_topics' topic.board.pk %}">{{ topic.board.name }}</a></li>
+                <li class="breadcrumb-item active">{{ topic.subject }}</li>
+            </div>
+          {% endblock header %}
 
-{% block breadcrumb %}
-  <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
-  <li class="breadcrumb-item"><a href="{% url 'board_topics' topic.board.pk %}">{{ topic.board.name }}</a></li>
-  <li class="breadcrumb-item active">{{ topic.subject }}</li>
-{% endblock %}
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
 
-{% block content %}
 
   <div class="mb-4">
     <a href="{% url 'reply_topic' board_pk topic_pk  %}" class="btn btn-primary" role="button">Reply</a>
@@ -48,5 +60,6 @@
       </div>
     </div>
   {% endfor %}
-
+            </div>
+    </section>
 {% endblock %}

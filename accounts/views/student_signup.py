@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
@@ -17,9 +18,9 @@ class StudentSignUpView(CreateView):
 
     def get_context_data(self, **kwargs):
         kwargs['user_type'] = 'Student'
+        messages.success(self.request, "Student Account Created Successfuly")
         return super().get_context_data(**kwargs)
 
     def form_valid(self, form):
         user = form.save()
-        login(self.request, user)
         return redirect('home')

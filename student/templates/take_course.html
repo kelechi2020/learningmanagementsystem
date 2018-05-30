@@ -1,6 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">{{ course.title }} Details</h2>
+            </div>
+          {% endblock header %}
 
-{% block content %}
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item active" aria-current="page">{{ course.title }}</li>
@@ -8,7 +24,7 @@
   </nav>
   <h2 class="mb-3">{{ course.title }}</h2>
 <div class="panel panel-primary">
-  <div class="panel-heading">Title</div>
+  <div class="panel-heading">Course Title</div>
   <div class="panel-body">
     {{ course.title }}
   </div>
@@ -54,11 +70,17 @@
             </td>
           </tr>
         {% empty %}
+            {% if request.user.is_instructor %}
           <tr>
             <td class="bg-light text-center font-italic" colspan="5">You haven't created any quiz yet.</td>
           </tr>
+            {% endif %}
         {% endfor %}
       </tbody>
     </table>
   </div>
+</div>
+</div>
+            </div>
+    </section>
 {% endblock %}

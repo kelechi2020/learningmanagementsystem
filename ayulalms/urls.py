@@ -24,7 +24,6 @@ from django.contrib.auth.views import LoginView, LogoutView,  \
     PasswordChangeDoneView
 
 from accounts.view import SignUpView, home
-w
 
 urlpatterns = (
     url(r'^__debug__/', include(debug_toolbar.urls)),

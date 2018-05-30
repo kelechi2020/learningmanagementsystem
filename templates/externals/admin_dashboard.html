@@ -1,13 +1,21 @@
 {% extends 'externals/base.html' %}
 
           {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
             <div class="container-fluid">
               <h2 class="no-margin-bottom"> Admin Dashboard</h2>
             </div>
           {% endblock header %}
 
-{% block content %}
-<section class="dashboard-counts no-padding-bottom">
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
                 <!-- Item -->
@@ -62,7 +70,7 @@
             </div>
           </section>
 
-<section class="dashboard-header">
+    <section class="dashboard-header">
             <div class="container-fluid">
               <div class="row">
                 <!-- Statistics -->
@@ -87,4 +95,4 @@
             </div>
           </section>
 
-{% endblock content %}
+    {% endblock content %}

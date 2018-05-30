@@ -1,12 +1,23 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
-{% block content %}
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">My Quizzes</li>
-    </ol>
-  </nav>
-  <h2 class="mb-3">My Quizzes</h2>
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">My Quizzes</h2>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
 {#  <a href="{% url 'instructor:quiz_add' %}" class="btn btn-primary mb-3" role="button">Add quiz</a>#}
   <div class="card">
     <table class="table mb-0">
@@ -40,4 +51,6 @@
       </tbody>
     </table>
   </div>
+            </div>
+    </section>
 {% endblock %}

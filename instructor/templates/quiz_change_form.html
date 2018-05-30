@@ -1,14 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
 {% load crispy_forms_tags %}
-
-{% block content %}
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+         {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
       <li class="breadcrumb-item"><a href="{% url 'instructor:quiz_change_list' %}">My Quizzes</a></li>
       <li class="breadcrumb-item active" aria-current="page">{{ quiz.name }}</li>
-    </ol>
-  </nav>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
   <h2 class="mb-3">
     {{ quiz.name }}
     <a href="{% url 'instructor:quiz_results' quiz.pk %}" class="btn btn-primary float-right">View results</a>
@@ -58,4 +68,6 @@
       <a href="{% url 'instructor:question_add' quiz.pk %}" class="btn btn-primary btn-sm">Add question</a>
     </div>
   </div>
+            </div>
+    </section>
 {% endblock %}

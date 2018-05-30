@@ -15,7 +15,7 @@ class SignUpView(TemplateView):
 def home(request):
     if request.user.is_authenticated:
         if request.user.is_instructor:
-            return redirect('instructor:quiz_change_list')
+            return redirect('instructor:course_change_list')
         elif request.user.is_staff:
             return redirect('admin_home')
         elif request.user.is_teaching_assistant:

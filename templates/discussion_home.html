@@ -1,10 +1,21 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom"> Boards</h2>
+            </div>
+          {% endblock header %}
 
-{% block breadcrumb %}
-  <li class="breadcrumb-item active">Boards</li>
-{% endblock %}
-
-{% block content %}
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
   <table class="table">
     <thead class="thead-inverse">
       <tr>
@@ -46,4 +57,6 @@
       {% endfor %}
     </tbody>
   </table>
+            </div>
+    </section>
 {% endblock %}

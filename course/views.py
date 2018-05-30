@@ -98,7 +98,7 @@ class CourseUpdateView(UpdateView):
 @method_decorator([login_required, instructor_required], name='dispatch')
 class CourseDeleteView(DeleteView):
     model = Course
-    context_object_name = 'quiz'
+    context_object_name = 'course'
     template_name = 'course_delete_confirm.html'
     success_url = reverse_lazy('instructor:quiz_change_list')
 
@@ -147,7 +147,7 @@ class TopicListView(ListView):
     template_name = 'topic_change_list.html'
 
     def get_queryset(self):
-        queryset = Topic.objects.filter(topics_course__creator=self.request.user)
+        queryset = Topic.objects.filter(topics_course__creator=self.request.user).select_related('topics_course')
         return queryset
 
 

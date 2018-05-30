@@ -1,17 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
-{#{% load crispy_forms_tags %}#}
-
+          {% block header %}
+            <div class="container-fluid">
+              <h2>Create An {{ user_type }} Account</h2>
+            </div>
+          {% endblock header %}
 {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
   <div class="row">
     <div class="col-md-8 col-sm-10 col-12">
-      <h2>Sign up as a {{ user_type }}</h2>
+
       <form method="post" novalidate>
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}">
-        {{ form }}
+        {% include 'includes/form.html' %}
         <button type="submit" class="btn btn-success">Sign up</button>
       </form>
     </div>
   </div>
+            </div>
+    </section>
 {% endblock %}

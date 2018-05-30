@@ -1,31 +1,44 @@
-{% extends 'base.html' %}
+{% extends 'externals/base.html' %}
 
-{% block content %}
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">My Courses</li>
-    </ol>
-  </nav>
-  <h2 class="mb-3">My Courses</h2>
-  <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom"> Course Topics</h2>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+
   <div class="card">
     <table class="table mb-0">
       <thead>
         <tr>
+          <th>Chapter</th>
           <th>Title</th>
           <th>Description</th>
-          <th>Created</th>
-
+            <th>Course</th>
+            <th>Duration</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        {% for course in courses %}
+        {% for topic in topics %}
           <tr>
 
-            <td class="align-middle">{{ course.title }}</td>
-            <td class="align-middle">{{ course.description}}</td>
-            <td class="align-middle">{{ course.created }}</td>
+            <td class="align-middle">{{ topic.topic_chapter }}</td>
+            <td class="align-middle">{{ topic.topic_title}}</td>
+            <td class="align-middle">{{ topic.topic_description |truncatechars:100}}</td>
+              <td class="align-middle">{{ topic.topics_course }}</td>
+              <td class="align-middle">{{ topic.topic_duration }}</td>
             <td class="text-right">
 {#              <a href="{% url 'instructor:quiz_results' quiz.pk %}" class="btn btn-primary">Add Topics</a>#}
 {#              <a href="{% url 'instructor:quiz_results' quiz.pk %}" class="btn btn-primary">Create Quiz</a>#}
@@ -40,4 +53,6 @@
       </tbody>
     </table>
   </div>
+            </div>
+    </section>
 {% endblock %}

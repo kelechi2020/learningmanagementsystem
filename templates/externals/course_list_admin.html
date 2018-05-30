@@ -1,5 +1,6 @@
 {% extends 'externals/base.html' %}
 
+
           {% block header %}
                    {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
@@ -10,20 +11,23 @@
                 </div>
               {% endfor %}
             <div class="container-fluid">
-              <h2 class="no-margin-bottom"> My Courses</h2>
+              <h2 class="no-margin-bottom"> Courses List</h2>
             </div>
           {% endblock header %}
-
-    {% block content %}
-    <section class="dashboard-counts no-padding-bottom">
+{% block content %}
+        <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
   <nav aria-label="breadcrumb">
-  {% if request.user.is_student %}
+  {% if request.user.is_instructor %}
     <ol class="breadcrumb">
       <li class="breadcrumb-item active" aria-current="page">Available Courses</li>
     </ol>
   {% endif %}
-
+  {% if request.user.is_instructor %}
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">My Courses</li>
+    </ol>
+  {% endif %}
   </nav>
     {% if request.user.is_instructor %}
   <h2 class="mb-3">My Courses</h2>
@@ -49,7 +53,7 @@
         {% for course in courses %}
           <tr>
 
-            <td class="align-middle"><a href="{% url 'student:course_detail' course.pk %}">{{ course.title }}</a></td>
+            <td class="align-middle"><a href="{% url 'admin_view_courses' course.pk %}">{{ course.title }}</a></td>
             <td class="align-middle">{{ course.description|truncatechars:15}}</td>
               {% if request.user.is_instructor %}
             <td class="align-middle">{{ course.created }}</td>
@@ -58,8 +62,7 @@
                 {% if request.user.is_instructor %}
               <a href="{% url 'instructor:topic_add' course.pk %}" class="btn btn-primary">Add Topics</a>
               <a href="{% url 'instructor:quiz_add' course.pk %}" class="btn btn-primary">Create Quiz</a>
-              <a href="{% url 'instructor:course_delete' course.pk %}" class="btn btn-primary">Delete Topic</a>
-                    {% endif %}
+                {% endif %}
             {% if request.user.is_student %}
               <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>
             {% endif %}
@@ -82,5 +85,5 @@
     </table>
   </div>
             </div>
-    </section>
+        </section>
 {% endblock %}

@@ -44,10 +44,8 @@ INSTALLED_APPS = [
     'quiz',
     'adminactions',
     'assignment',
-    'buisness_logic',
     'widget_tweaks',
     'teaching_assistant',
-    'grades',
     'discussion'
 ]
 AUTH_USER_MODEL = 'accounts.User'

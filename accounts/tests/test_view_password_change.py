@@ -1,6 +1,8 @@
-from django.contrib.auth.models import User
+
 from django.test import TestCase
 from django.urls import reverse
+
+from accounts.models import User
 
 
 class LoginRequiredPasswordChangeTests(TestCase):
@@ -9,6 +11,7 @@ class LoginRequiredPasswordChangeTests(TestCase):
         login_url = reverse('login')
         response = self.client.get(url)
         self.assertRedirects(response, f'{login_url}?next={url}')
+
 
 class PasswordChangeTestCase(TestCase):
     def setUp(self, data={}):
@@ -39,15 +42,6 @@ class SuccessfulPasswordChangeTests(PasswordChangeTestCase):
         '''
         self.user.refresh_from_db()
         self.assertTrue(self.user.check_password('new_password'))
-
-    def test_user_authentication(self):
-        '''
-        Create a new request to an arbitrary page.
-        The resulting response should now have an `user` to its context, after a successful sign up.
-        '''
-        response = self.client.get(reverse('home'))
-        user = response.context.get('user')
-        self.assertTrue(user.is_authenticated)
 
 
 class InvalidPasswordChangeTests(PasswordChangeTestCase):

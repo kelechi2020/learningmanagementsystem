@@ -1,76 +1,54 @@
-
-from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse, resolve
 
-from accounts.forms import SignUpForm
-from accounts.views import signup
+from accounts.models import User
+from accounts.views.guest_signup import ObserverSignUpView
+from accounts.views.instructor_signup import InstructorSignUpView
+from accounts.views.student_signup import StudentSignUpView
 
 
 class SignUpTests(TestCase):
     def setUp(self):
-        url = reverse('signup')
-        self.response = self.client.get(url)
+        self.username = 'john'
+        self.password = '123'
+        self.user = User.objects.create_user(username=self.username, email='john@doe.com', password=self.password, is_staff=True)
+        self.client.login(username=self.username, password=self.password)
+        self.student_signup_url = reverse('student_signup')
+        self.instructor_signup_url = reverse('instructor_signup')
+        self.observer_signup_url = reverse('guest_signup')
 
-    def test_signup_status_code(self):
-        self.assertEquals(self.response.status_code, 200)
 
-    def test_signup_url_resolves_signup_view(self):
-        view = resolve('/signup/')
-        self.assertEquals(view.func, signup)
+    def test_student_signup_status_code(self):
+        url = self.student_signup_url
+        response = self.client.get(url)
+        self.assertEquals(response.status_code, 200)
 
-    def test_csrf(self):
-        self.assertContains(self.response, 'csrfmiddlewaretoken')
+    def test_instructor_signup_status_code(self):
+        url = self.observer_signup_url
+        response = self.client.get(url)
+        self.assertEquals(response.status_code, 200)
 
-    def test_contains_form(self):
-        form = self.response.context.get('form')
-        self.assertIsInstance(form,SignUpForm)
+    def test_observer_signup_status_code(self):
+        url = self.observer_signup_url
+        response = self.client.get(url)
+        self.assertEquals(response.status_code, 200)
 
-    def test_form_inputs(self):
-        '''
-        The view must contain five inputs: csrf, username, email,
-        password1, password2
-        '''
-        self.assertContains(self.response, '<input', 5)
-        self.assertContains(self.response, 'type="text"', 1)
-        self.assertContains(self.response, 'type="email"', 1)
-        self.assertContains(self.response, 'type="password"', 2)
+    def test_student_signup_url_resolves_signup_view(self):
+        view = resolve('/adminact/accounts/signup/student/')
+        self.assertEquals(view.func.view_class, StudentSignUpView)
 
-class SuccessfulSignupTests(TestCase):
+    def test_instructor_signup_url_resolves_signup_view(self):
+        view = resolve('/adminact/accounts/signup/instructor/')
+        self.assertEquals(view.func.view_class, InstructorSignUpView)
+
+    def test_observer_signup_url_resolves_signup_view(self):
+        view = resolve('/adminact/accounts/signup/guest/')
+        self.assertEquals(view.func.view_class, ObserverSignUpView)
+
+
+class InvalidInstrucorSignUpTests(TestCase):
     def setUp(self):
-        url = reverse('signup')
-        data = {
-            'username': 'john',
-            'email': 'john@doe.com',
-            'password1': 'abcdef123456',
-            'password2': 'abcdef123456'
-        }
-        self.response = self.client.post(url, data)
-        self.home_url = reverse('home')
-
-    def test_redirection(self):
-        '''
-        A valid form submission should redirect the user to the home page
-        '''
-        self.assertRedirects(self.response, self.home_url)
-
-    def test_user_creation(self):
-        self.assertTrue(User.objects.exists())
-
-    def test_user_authentication(self):
-        '''
-        Create a new request to an arbitrary page.
-        The resulting response should now have a `user` to its context,
-        after a successful sign up.
-        '''
-        response = self.client.get(self.home_url)
-        user = response.context.get('user')
-        self.assertTrue(user.is_authenticated)
-
-
-class InvaliSignUpTests(TestCase):
-    def setUp(self):
-        url = reverse('signup')
+        url = reverse('instructor_signup')
         self.response = self.client.post(url, {})
 
     def test_form_errors(self):

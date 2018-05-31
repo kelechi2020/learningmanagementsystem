@@ -1,7 +1,7 @@
 from django import forms
 from django.test import TestCase
 
-from board.templatetags.form_tags import input_class, field_type
+from discussion.templatetags.form_tags import field_type, input_class
 
 
 class ExampleForm(forms.Form):

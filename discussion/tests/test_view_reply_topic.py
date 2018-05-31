@@ -1,10 +1,12 @@
-from django.contrib.auth.models import User
+
 from django.test import TestCase
 from django.urls import resolve, reverse
 
-from board.forms import PostForm
-from board.models import Board, Topic, Post
-from board.views import reply_topic
+from accounts.models import User
+from course.models import Course
+from discussion.forms import PostForm
+from discussion.models import Board, Topic, Post
+from discussion.views import reply_topic
 
 
 class ReplyTopicTestCase(TestCase):
@@ -12,12 +14,14 @@ class ReplyTopicTestCase(TestCase):
     Base test case to be used in all `reply_topic` view tests
     '''
     def setUp(self):
-        self.board = Board.objects.create(name='Django', description='Django board.')
         self.username = 'john'
         self.password = '123'
-        user = User.objects.create_user(username=self.username, email='john@doe.com', password=self.password)
-        self.topic = Topic.objects.create(subject='Hello, world', board=self.board, starter=user)
-        Post.objects.create(message='Lorem ipsum dolor sit amet', topic=self.topic, created_by=user)
+        self.user = User.objects.create_user(username=self.username, email='john@doe.com', password=self.password, is_instructor=True)
+        self.course = Course.objects.create(creator=self.user, title="all we do is win win win", description="olowogbo")
+        self.board = Board.objects.create(name='Django', description='Django board.', course=self.course, created_by=self.user)
+
+        self.topic = Topic.objects.create(subject='Hello, world', board=self.board, starter=self.user)
+        Post.objects.create(message='Lorem ipsum dolor sit amet', topic=self.topic, created_by=self.user)
         self.url = reverse('reply_topic', kwargs={'pk': self.board.pk, 'topic_pk': self.topic.pk})
 
 
@@ -38,7 +42,7 @@ class ReplyTopicTests(ReplyTopicTestCase):
         self.assertEquals(self.response.status_code, 200)
 
     def test_view_function(self):
-        view = resolve('/boards/1/topics/1/reply/')
+        view = resolve('/discussion/boards/1/topics/1/reply/')
         self.assertEquals(view.func, reply_topic)
 
     def test_csrf(self):
@@ -67,8 +71,9 @@ class SuccessfulReplyTopicTests(ReplyTopicTestCase):
         A valid form submission should redirect the user
         '''
         url = reverse('topic_posts', kwargs={'pk': self.board.pk, 'topic_pk': self.topic.pk})
-        topic_posts_url = '{url}?page=1#2'.format(url=url)
+        topic_posts_url = '{url}'.format(url=url)
         self.assertRedirects(self.response, topic_posts_url)
+
     def test_reply_created(self):
         '''
         The total post count should be 2

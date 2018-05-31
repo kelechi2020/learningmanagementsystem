@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '#(1mf!9ej1@u%g$4#o_3oha4ea#(tpvayvo@*mnelw8_71ft0a'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['ayulalms.herokuapp.com']
 # Application definition
 INSTALLED_APPS = [

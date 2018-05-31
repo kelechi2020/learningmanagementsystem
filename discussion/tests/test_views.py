@@ -1,9 +1,9 @@
 from django.contrib.auth.models import User
 from django.test import TestCase
-from django.core.urlresolvers import reverse
+
 
 # Create your tests here.
-from django.urls import resolve
+from django.urls import resolve, reverse
 
 from board.forms import NewTopicForm
 from board.models import Board, Topic, Post

@@ -109,9 +109,6 @@
 
                 <!-- Instructor Side Panel -->
         {% if user.is_instructor %}
-
-
-
             <ul class="list-unstyled">
                     <li class="active"><a href="{% url 'home' %}"> <i class="icon-home"></i>Home </a></li>
 
@@ -147,30 +144,16 @@
                     <li class="active"><a href="{% url 'student:course_change_list' %}"> <i class="icon-home"></i>Courses </a></li>
                     <li><a href="{% url 'student:registered_course_list' %}"> <i class="icon-grid"></i>Registered Course</a></li>
                     <li><a href="{% url 'student:quiz_list' %}"> <i class="fa fa-bar-chart"></i>Quizzes </a></li>
-                    <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
-                      <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
+                    <li class=""><a href="{% url 'discussion_home' %}"> <i class="icon-home"></i>Discussions </a></li>
+                    <li><a href="#exampledropdownDropdown9" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Assignments </a>
+                      <ul id="exampledropdownDropdown9" class="collapse list-unstyled ">
+                        <li><a href="#">Course Assignments</a></li>
+                        <li><a href="#">Reviews</a></li>
                       </ul>
                     </li>
-                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
-                      <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
-                      <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="login.html"> <i class="icon-interface-windows"></i>Login page </a></li>
-            </ul>
+
+
+             </ul>
         {% endif %}
             <!-- Observer Side Panel -->
         {% if user.is_observer %}

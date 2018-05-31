@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 import debug_toolbar
+import sys
 from django.conf.urls import include
 
 from django.conf.urls import url
@@ -23,7 +24,8 @@ from django.contrib.auth.views import LoginView, LogoutView,  \
      PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView, PasswordChangeView,\
     PasswordChangeDoneView
 from django.urls import path
-
+from django.views.debug import technical_500_response
+from django.conf import urls
 from accounts.view import SignUpView, home
 
 urlpatterns = (
@@ -57,3 +59,8 @@ urlpatterns = (
         name='password_change_done'),
 )
 
+def handler500(request):
+    return technical_500_response(request, *sys.exc_info())
+
+
+urls.handler500 =  handler500

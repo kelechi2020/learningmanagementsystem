@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff3aac1e-18c3-4db2-a15d-33c1d1c6c57a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests/test_form_signup.py" afterPath="$PROJECT_DIR$/accounts/tests/test_form_signup.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests/test_mail_password_reset.py" afterPath="$PROJECT_DIR$/accounts/tests/test_mail_password_reset.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" afterPath="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests/test_view_signup.py" afterPath="$PROJECT_DIR$/accounts/tests/test_view_signup.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests/test_templatetags.py" afterPath="$PROJECT_DIR$/discussion/tests/test_templatetags.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests/test_view_new_topic.py" afterPath="$PROJECT_DIR$/discussion/tests/test_view_new_topic.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests/test_view_reply_topic.py" afterPath="$PROJECT_DIR$/discussion/tests/test_view_reply_topic.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests/test_view_topic_posts.py" afterPath="$PROJECT_DIR$/discussion/tests/test_view_topic_posts.py" />
-      <change beforePath="$PROJECT_DIR$/discussion/tests/test_views.py" afterPath="$PROJECT_DIR$/discussion/tests/test_views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_email.html" afterPath="$PROJECT_DIR$/templates/password_reset_email.html" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_subject.txt" afterPath="$PROJECT_DIR$/templates/password_reset_subject.txt" />
+      <change beforePath="$PROJECT_DIR$/ayulalms/settings.py" afterPath="$PROJECT_DIR$/ayulalms/settings.py" />
+      <change beforePath="$PROJECT_DIR$/ayulalms/urls.py" afterPath="$PROJECT_DIR$/ayulalms/urls.py" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,96 +53,20 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_reply_topic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discussion/tests/test_view_reply_topic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1087">
-              <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="1378">
+              <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
               <folding>
-                <element signature="e#1#33#0" expanded="true" />
+                <element signature="e#647#667#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discussion/tests/test_views.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ayulalms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_topic_posts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discussion/tests/test_view_topic_posts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_password_change.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/tests/test_view_password_change.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_signup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/tests/test_view_signup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_board_topics.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discussion/tests/test_view_board_topics.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_view_new_topic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discussion/tests/test_view_new_topic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="181">
+              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -255,13 +170,11 @@
         <option value="$PROJECT_DIR$/ayulalms/wsgi.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
-        <option value="$PROJECT_DIR$/ayulalms/settings.py" />
         <option value="$PROJECT_DIR$/accounts/tests/test_form_signup.py" />
         <option value="$PROJECT_DIR$/templates/password_reset_subject.txt" />
         <option value="$PROJECT_DIR$/accounts/tests/test_mail_password_reset.py" />
         <option value="$PROJECT_DIR$/templates/password_reset_email.html" />
         <option value="$PROJECT_DIR$/accounts/view.py" />
-        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
         <option value="$PROJECT_DIR$/discussion/tests/test_templatetags.py" />
         <option value="$PROJECT_DIR$/discussion/tests/test_view_new_topic.py" />
         <option value="$PROJECT_DIR$/accounts/tests/test_view_password_reset.py" />
@@ -270,6 +183,8 @@
         <option value="$PROJECT_DIR$/discussion/tests/test_view_reply_topic.py" />
         <option value="$PROJECT_DIR$/accounts/tests/test_view_password_change.py" />
         <option value="$PROJECT_DIR$/accounts/tests/test_view_signup.py" />
+        <option value="$PROJECT_DIR$/ayulalms/urls.py" />
+        <option value="$PROJECT_DIR$/ayulalms/settings.py" />
       </list>
     </option>
   </component>
@@ -280,10 +195,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1380" />
-    <option name="height" value="744" />
+    <option name="x" value="22" />
+    <option name="y" value="13" />
+    <option name="width" value="1294" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -313,29 +228,7 @@
             <path>
               <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="discussion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ayulalms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ayulalms" type="462c0819:PsiDirectoryNode" />
-              <item name="discussion" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -426,13 +319,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.50303954" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4064081" sideWeight="0.4969605" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31703204" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4064081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31703204" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20236088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17705168" sideWeight="0.49115044" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1512158" sideWeight="0.5104167" order="3" side_tool="true" content_ui="tabs" />
@@ -664,14 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ayulalms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2599">
-          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -777,7 +663,7 @@
         <state relative-caret-position="430">
           <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,18 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/discussion/tests/test_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
-          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
           <folding>
             <element signature="e#1#33#0" expanded="true" />
           </folding>
@@ -917,10 +795,28 @@
     <entry file="file://$PROJECT_DIR$/accounts/tests/test_view_signup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayulalms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1378">
+          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <folding>
+            <element signature="e#647#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayulalms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

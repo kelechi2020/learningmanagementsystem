@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from django.shortcuts import redirect, get_object_or_404
 from django.template.loader import render_to_string
 from django.utils.decorators import method_decorator
+from django.utils.functional import cached_property
 from django.views.generic import TemplateView, ListView
 from accounts.decorators import admin_required
 from accounts.models import User
@@ -17,7 +18,7 @@ def home(request):
         if request.user.is_instructor:
             return redirect('instructor:course_change_list')
         elif request.user.is_staff:
-            return redirect('admin_home')
+            return redirect('discussion_home')
         # elif request.user.is_teaching_assistant:
         #     return redirect('student:quiz_list')
         elif request.user.is_student:
@@ -62,7 +63,7 @@ class InstructorsListView(ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
-    paginate_by = 4
+    paginate_by = 80
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -87,7 +88,7 @@ class StudentsListView(ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
-    paginate_by = 4
+    paginate_by = 80
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -112,7 +113,7 @@ class ObserversListView(ListView):
     ordering = ('username', )
     context_object_name = 'accounts'
     template_name = 'account_list.html'
-    paginate_by = 4
+    paginate_by = 80
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

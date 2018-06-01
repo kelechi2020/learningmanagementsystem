@@ -6,5 +6,5 @@ This project was divided into several apps representing various entities that ex
 To better navigate this repository, the urls.py files are placed at the root of the following
 apps : students app, instructor app, discussion app, adminactions app.
 
-To run tests included ,run command prompt in the root directory
+To run tests included ,open command prompt in the project directory and run "python manage.py tests"
 

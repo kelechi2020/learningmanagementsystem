@@ -8,7 +8,7 @@ class User(AbstractUser):
     Extending the Abstract user class to add extra fields that allow a user assume
     one or more roles on the platform
     """
-    is_student = models.BooleanField(default=False)
+    is_student = models.BooleanField(default=False, db_index=True)
     is_instructor = models.BooleanField(default=False)
     is_teaching_assistant = models.BooleanField(default=False)
     is_observer = models.BooleanField(default=False)

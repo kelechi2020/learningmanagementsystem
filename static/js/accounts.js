@@ -2,6 +2,7 @@ $(function () {
     /* Functions */
     var loadForm = function () {
         var btn = $(this);
+
         $.ajax({
             url: btn.attr("data-url"),
             type: 'get',
@@ -17,6 +18,7 @@ $(function () {
 
     var saveForm = function () {
         var form = $(this);
+
         $.ajax({
             url: form.attr("action"),
             data: form.serialize(),
@@ -31,6 +33,7 @@ $(function () {
                     $("#modal-book .modal-content").html(data.html_form);
                 }
             }
+
         });
         return false;
     };

@@ -59,8 +59,8 @@ urlpatterns = (
         name='password_change_done'),
 )
 
-def handler500(request):
-    return technical_500_response(request, *sys.exc_info())
+# def handler500(request):
+#     return technical_500_response(request, *sys.exc_info())
 
 
-urls.handler500 =  handler500
+# urls.handler500 =  handler500

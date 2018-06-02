@@ -7,11 +7,11 @@ from course.models import Course, Topic
 from discussion.models import Board, Topic as DiscussionTopic, Post
 from student.models import StudentProfile, StudentTakenQuiz, StudentCourses, StudentAnswer
 
-# class CustomUserAdmin(UserAdmin):
-#     pass
+class CustomUserAdmin(UserAdmin):
+    pass
 
 
-admin.site.register(User)
+admin.site.register(User,UserAdmin)
 admin.site.register(Course)
 admin.site.register(Topic)
 admin.site.register(StudentProfile)

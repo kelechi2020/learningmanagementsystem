@@ -11,20 +11,6 @@ from instructor.models import Instructor
 from student.models import StudentProfile
 
 
-@method_decorator([login_required, instructor_required], name='dispatch')
-class CourseCreateView(CreateView):
-    model = Course
-    fields = ('title', 'slug', 'image', 'description', 'blob')
-    template_name = 'course_add_form.html'
-
-    def form_valid(self, form):
-        course = form.save(commit=False)
-        course.creator = self.request.user
-        instructor = Instructor.objects.get(user=self.request.user)
-        course.save()
-        instructor.course.add(course)
-        messages.success(self.request, 'The Course was created with success! Go ahead and add some quiz now.')
-        return redirect('instructor:course_change_list')
 
 
 @method_decorator([login_required], name='dispatch')
@@ -104,21 +90,11 @@ class CourseDeleteView(DeleteView):
 
     def delete(self, request, *args, **kwargs):
         quiz = self.get_object()
-        messages.success(request, 'The course %s was deleted with success!' % quiz.name)
+        messages.success(request, 'The course  was deleted with success!' )
         return super().delete(request, *args, **kwargs)
 
     def get_queryset(self):
         return self.request.user.courses.all()
-
-    def dispatch(self, request, *args, **kwargs):
-        """
-        Overiding the dispatch method to ensure that only the authr of a course can change it
-        """
-        obj = self.get_object()
-        if obj.creator != self.request.user:
-            messages.error(self.request, "You cant delete this couurse as you are not the author")
-            return redirect('instructor:course_change_list')
-        return super().dispatch(request)
 
 
 @method_decorator([login_required, instructor_required], name='dispatch')

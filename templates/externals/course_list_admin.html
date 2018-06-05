@@ -29,10 +29,7 @@
     </ol>
   {% endif %}
   </nav>
-    {% if request.user.is_instructor %}
-  <h2 class="mb-3">My Courses</h2>
-  <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
-    {% endif %}
+
    {% if request.user.is_student %}
   <h2 class="mb-3">My Courses</h2>
   <a href="{% url 'student:registered_course_list' %}" class="btn btn-primary mb-3" role="button">View Registered Courses</a>
@@ -62,9 +59,7 @@
                 {% if request.user.is_instructor %}
               <a href="{% url 'instructor:topic_add' course.pk %}" class="btn btn-primary">Add Topics</a>
               <a href="{% url 'instructor:quiz_add' course.pk %}" class="btn btn-primary">Create Quiz</a>
-                {% endif %}
-            {% if request.user.is_student %}
-              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>
+{#              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Students</a>#}
             {% endif %}
             </td>
 

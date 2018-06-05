@@ -24,3 +24,5 @@ login as a student using :
 Username : student45
 password : student12345
 
+Instructor's Area.
+

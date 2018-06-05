@@ -18,10 +18,7 @@
     <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
 
-    {% if request.user.is_instructor %}
-  <h2 class="mb-3">My Courses</h2>
-  <a href="{% url 'instructor:course_add' %}" class="btn btn-primary mb-3" role="button">Add Course</a>
-    {% endif %}
+
   <div class="card">
     <table class="table mb-0">
       <thead>
@@ -37,20 +34,27 @@
       <tbody>
         {% for course in courses %}
           <tr>
+            {% if request.user.is_instructor %}
+                 <td class="align-middle"><a href="{% url 'instructor:course_detail' course.pk %}">{{ course.title }}</a></td>
+              {% elif reuest.user.is_student %}
+                     <td class="align-middle"><a href="{% url 'student:course_detail' course.pk %}">{{ course.title }}</a></td>
+                {% elif request.user.is_admin %}
+                     <td class="align-middle"><a href="{% url 'instructor:course_detail' course.pk %}">{{ course.title }}</a></td>
 
-            <td class="align-middle"><a href="{% url 'student:course_detail' course.pk %}">{{ course.title }}</a></td>
+                {% endif %}
+
             <td class="align-middle">{{ course.description|truncatechars:15}}</td>
               {% if request.user.is_instructor %}
             <td class="align-middle">{{ course.created }}</td>
               {% endif %}
             <td class="text-right">
                 {% if request.user.is_instructor %}
-              <a href="{% url 'instructor:topic_add' course.pk %}" class="btn btn-primary">Add Topics</a>
+
               <a href="{% url 'instructor:quiz_add' course.pk %}" class="btn btn-primary">Create Quiz</a>
-              <a href="{% url 'instructor:course_delete' course.pk %}" class="btn btn-primary">Delete Topic</a>
+
                     {% endif %}
             {% if request.user.is_student %}
-              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>
+{#              <a href="{% url 'student:register_course' course.pk %}" class="btn btn-primary">Register Course</a>#}
             {% endif %}
             </td>
 

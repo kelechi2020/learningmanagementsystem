@@ -2,8 +2,25 @@
 
 {% load crispy_forms_tags %}
 
-{% block content %}
-  <nav aria-label="breadcrumb">
+
+          {% block header %}
+                   {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endfor %}
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom"> Admin Dashboard</h2>
+            </div>
+          {% endblock header %}
+
+    {% block content %}
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+      <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{% url 'instructor:course_change_list' %}">My Courses</a></li>
       <li class="breadcrumb-item active" aria-current="page">{{ course_name }}</li>

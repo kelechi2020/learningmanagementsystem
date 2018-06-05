@@ -1,16 +1,16 @@
 from django.urls import include, path
-from course.views import CourseListView, CourseCreateView, CourseUpdateView, CourseDeleteView, TopicListView, \
+from course.views import CourseListView, CourseUpdateView, CourseDeleteView, TopicListView, \
     TopicCreateView, TopicUpdateView, TopicDeleteView
 from instructor.views import QuizListView, QuizCreateView, QuizUpdateView, QuizDeleteView, QuizResultsView, \
-    question_add, question_change, QuestionDeleteView
+    question_add, question_change, QuestionDeleteView, CourseDetailView
 
 urlpatterns = [
     # path('', classroom.home, name='home'),
     path('instructor/', include(([
         path('', CourseListView.as_view(), name='course_change_list'),
-        path('course/add/', CourseCreateView.as_view(), name='course_add'),
         path('course/<int:pk>/', CourseUpdateView.as_view(), name='course_change'),
         path('course/<int:pk>/delete/', CourseDeleteView.as_view(), name='course_delete'),
+        path('coursedetail/<int:course_pk>/', CourseDetailView.as_view(), name='course_detail'),
 
         path('topic', TopicListView.as_view(), name='topic_change_list'),
         path('topic/add/<int:course_pk>/', TopicCreateView.as_view(), name='topic_add'),

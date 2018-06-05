@@ -16,6 +16,16 @@ from quiz.forms import QuestionForm, BaseAnswerInlineFormSet, QuizCreateForm
 from quiz.models import Quiz, Question, Answer
 
 
+
+
+@method_decorator([login_required], name='dispatch')
+class CourseDetailView(DetailView):
+    model = Course
+    context_object_name = 'course'
+    template_name = 'take_course.html'
+    pk_url_kwarg = 'course_pk'
+
+
 @method_decorator([login_required, instructor_required], name='dispatch')
 class QuizListView(ListView):
     """
@@ -58,9 +68,6 @@ class QuizCreateView(CreateView):
         print("here")
         course = Course.objects.get(pk=self.kwargs['course_pk'])
         print(self.request.user, course.creator)
-        if self.request.user != course.creator:
-            messages.error(self.request, 'You are now allowed to add Quizzes to a course you did not author')
-            return redirect('instructor:topic_change_list')
         quiz.owner = self.request.user
         quiz.course = course
         quiz.save()

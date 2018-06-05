@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView
 
-from accounts.decorators import student_required
+from accounts.decorators import student_required, instructor_required
 from course.models import Course
 from quiz.forms import TakeQuizForm
 from quiz.models import Quiz
@@ -66,7 +66,7 @@ class RegisteredCourseListView(ListView):
 
 
 @login_required
-@student_required
+@instructor_required
 def course_registration(request, course_pk):
     """
     Handles Student Course Registration

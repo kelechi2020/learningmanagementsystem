@@ -14,10 +14,10 @@ class InstructorSignUpView(CreateView):
 
     def get_context_data(self, **kwargs):
         kwargs['user_type'] = 'Instructor'
-        messages.success(self.request, "Instructor Account Created Successfuly")
+
         return super().get_context_data(**kwargs)
 
     def form_valid(self, form):
         user = form.save()
-
+        messages.success(self.request, "Instructor Account Created Successfuly")
         return redirect('home')

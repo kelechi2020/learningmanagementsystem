@@ -20,9 +20,6 @@ class CourseListView(ListView):
     context_object_name = 'courses'
     template_name = 'course_change_list.html'
 
-    def get_queryset(self):
-        queryset = Course.objects.filter(creator=self.request.user)
-        return queryset
 
 @method_decorator([login_required], name='dispatch')
 class CourseDetailView(DetailView):
